@@ -1,0 +1,101 @@
+html, header nav .brand-change .brand-animation svg, html.js .burger-wrap {
+    background:#1b1b1b;
+}
+html {
+	overflow-x:hidden;
+}
+html.open {
+	overflow:hidden;
+}
+.wrapper, .overlay-contents {
+	max-width:$wrapper;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper, .overlay-contents {
+	padding:0 $m-space;
+	@include transition(350ms);
+	&.s-wrapper {
+		max-width:$s-wrapper;
+	}
+}
+.flex-container {
+	display: flex;
+	position: relative;
+	height: 100%;
+	&.flex-center {
+		justify-content: center;
+	}
+	&.flex-between {
+		justify-content: space-between;
+	}
+	&.flex-vertical {
+		flex-direction: column;
+	}
+	&.flex-reverse {
+		flex-direction: row-reverse;
+	}
+	&.align-center {
+		align-items: center;
+	}
+	&.align-start {
+		align-items: flex-start;
+	}
+	&.flex-wrap {
+		flex-wrap: wrap;
+	}
+	&.auto-height {
+		height: auto;
+	}
+	.flex-grow {
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+	.flex-half {
+		flex: 0 0 50%;
+	}
+	.flex-third {
+		flex: 0 0 33.3333%;
+	}
+	.flex-shrink {
+		flex-shrink: 1;
+		flex-basis: 0;
+	}
+}
+.image-fit {
+	overflow: hidden;
+	position:relative;
+	&.fit-bottom-right img {
+		object-position: bottom right;
+		object-fit: contain;
+	}
+	&.fit-right img {
+		object-position: right;
+		object-fit: contain;
+	}
+	img {
+		object-fit: cover;
+		position:absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+footer {
+	margin: $l-space auto;
+	.footer-social {
+		a {
+			padding:0 $space;
+		}
+	}
+}
+@media only screen and (max-width:$m-breakpoint) {
+	.wrapper, .overlay-contents {
+		padding:0 $s-space;
+	}
+	.flex-container.tablet-vertical {
+		flex-direction: column;
+	}
+	.tablet-sm-padding {
+		padding: $xs-space 0;
+	}
+}

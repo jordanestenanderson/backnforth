@@ -1,0 +1,25 @@
+# Site settings
+title:              BacknForth
+email:              jordan@esten.co
+description:        "Growing businesses with creative solutions as an independent contractor based in Canada. We solve unique visual problems with creative"
+# url:                "http://esten.co/"
+# baseurl:            /main
+baseurl:
+
+# File structure settings
+image_path:         /public/images
+
+# Build settings
+markdown:           kramdown
+permalink:          pretty
+
+# Collection definitions and settings
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Sass
+sass:
+  sass_dir:          _scss
+  style:            :compressed

@@ -1,0 +1,28 @@
+/****LOADER*****/
+html, header nav .brand-change .brand-animation svg,html.js .burger-wrap, .projectmenu-number, .overlay-projects ul li a:after, .meta-title {
+    @include delay(600ms);
+}
+.color-wipes-animate {
+    display: block;
+    position: fixed;
+    left:0;
+    top:100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    .color-wipe {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        opacity:1;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        background: initial;
+        .loader {
+            background: initial;
+            width: 100%;
+            height: 100vh;
+            opacity: 0;
+        }
+    }
+}

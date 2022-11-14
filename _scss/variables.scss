@@ -1,0 +1,32 @@
+/****WRAPPER*****/
+$wrapper: 1800px;
+$s-wrapper: 1200px;
+
+/****BREAKPOINTS*****/
+$m-breakpoint: 992px;
+$l-breakpoint: 1300px;
+
+/****SPACE*****/
+$space: 8px;
+$xs-space: $space * 2;
+$s-space: $space * 3;
+$r-space: $space * 4;
+$m-space: $space * 6;
+$l-space: $space * 12;
+$xl-space: $space * 24;
+
+/****COLORS*****/
+$grey: #f1f1f1;
+$darkgrey: #585858;
+$black: #1b1b1b;
+$white: #ffffff;
+
+/****OPACITY*****/
+$opacity: 0.4;
+
+/****STYLES*****/
+$padding: 18px;
+$header-height: 52px;
+$border-radius: 16px;
+$border-radius-s: 12px;
+$border-radius-xs: 8px;

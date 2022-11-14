@@ -1,0 +1,79 @@
+@mixin transition($transition) {
+  -webkit-transition: 	all $transition ease-out;
+  -moz-transition: 		all $transition ease-out;
+  -o-transition: 		all $transition ease-out;
+  transition: 			all $transition ease-out;
+}
+
+@mixin rotate($rotate) {
+  -webkit-transform:   rotate($rotate);
+  -moz-transform:    rotate($rotate);
+  -o-transform:    rotate($rotate);
+  transform:      rotate($rotate);
+}
+
+@mixin scale($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform:    scale($scale);
+  -ms-transform:     scale($scale);
+  -o-transform:      scale($scale);
+  transform:         scale($scale);
+}
+
+@mixin scalex($scalex) {
+  -webkit-transform: scalex($scalex);
+  -moz-transform:    scalex($scalex);
+  -ms-transform:     scalex($scalex);
+  -o-transform:      scalex($scalex);
+  transform:         scalex($scalex);
+}
+
+@mixin translate($translate) {
+  -webkit-transform: translate($translate, $translate);
+  -moz-transform:    translate($translate, $translate);
+  -ms-transform:     translate($translate, $translate);
+  -o-transform:      translate($translate, $translate);
+  transform:         translate($translate, $translate);
+}
+
+@mixin translateY($translateY) {
+  -webkit-transform: translateY($translateY);
+  -moz-transform:    translateY($translateY);
+  -ms-transform:     translateY($translateY);
+  -o-transform:      translateY($translateY);
+  transform:         translateY($translateY);
+}
+
+@mixin translateX($translateX) {
+  -webkit-transform: translateX($translateX);
+  -moz-transform:    translateX($translateX);
+  -ms-transform:     translateX($translateX);
+  -o-transform:      translateX($translateX);
+  transform:         translateX($translateX);
+}
+
+@mixin shadow($boxshadow) {
+  -moz-box-shadow:0px 1px 14px $boxshadow;
+  -webkit-box-shadow:0px 1px 14px $boxshadow;
+  box-shadow:0px 1px 14px $boxshadow;
+}
+
+@mixin shadowbig($boxshadowbig) {
+  -moz-box-shadow:0 14px 28px $boxshadowbig;
+  -webkit-box-shadow:0 14px 28px $boxshadowbig;
+  box-shadow:0 14px 28px $boxshadowbig;
+}
+
+@mixin delay($delay) {
+  -webkit-transition-delay: $delay;
+   -moz-transition-delay: $delay;
+   -o-transition-delay: $delay;
+   transition-delay: $delay;
+}
+
+@mixin eases($eases) {
+  -webkit-transition-timing-function: $eases;
+  -moz-transition-timing-function: $eases;
+  -o-transition-timing-function: $eases;
+  transition-timing-function: $eases;
+}

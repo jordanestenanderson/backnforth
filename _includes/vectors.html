@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+	{% assign site_projects = site.projects | sort:"order" %}
+	    {% for project in site_projects %}
+			  <symbol id="{{ project.title | slugify }}-brand" viewBox="{{ project.svg-box }}">
+			  	<path d="{{ project.svg-path }}"/>
+			  </symbol>
+	{% endfor %}
+</svg>
