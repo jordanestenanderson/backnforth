@@ -4,16 +4,8 @@ metatitle: Esten.co
 metadescription: Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada.
 metaimg: meta.jpg
 ---
-<style>
-    .overlay-projects ul li a:after {
-        background:rgba(355,355,355,0.2);
-    }
-    .projectmenu-number {
-        color:rgba(355,355,355,0.4);
-    }
-</style>
-<div id="barba-wrapper">
-    <div class="barba-container" data-namespace="home">
+<div>
+    <div>
         <div class="wrapper s-wrapper">
             <div data-aos="fade-down" class="hero-messaging flex-container flex-vertical flex-center">
                 <h1 class="title">Digital experiences designed for unique businesses</h1>
@@ -21,30 +13,6 @@ metaimg: meta.jpg
             </div>
         </div>
         <div class="home-grid">
-            {% assign site_projects = site.projects | sort:"order" %}
-            {% for project in site_projects %}
-                <a href="{{ site.baseurl }}{{ project.url }}" data-aos="fade-up" class="loader-link project-card image-fit fit-right {{ project.title | slugify }}-card" data-hue="#{{ project.hex }}" style="background-color:#{{ project.hex }};">
-                        <img class="project-background" src="{{ site.baseurl }}/assets/portfolio/{{ project.title | slugify }}/{{ project.cardbackground }}" alt="{{ page.cardbackgroundalt }}">
-                        <div class="wrapper project-info flex-container flex-vertical flex-between align-start">
-                            <svg class="project-svg" viewBox="{{ project.svg-box }}">
-                                <use xlink:href="#{{ project.title | slugify }}-brand" />
-                            </svg>
-                            <div class="project-content">
-                                <h2>
-                                    {{ project.headline }}
-                                    <svg class="inline-arrow" style="stroke:#{{ project.hex2 }}; fill:transparent;" width='45px' height='27px' viewBox='0 0 45 27' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
-                                        <g transform='translate(0.218416, 0.250000)' stroke-width='3'>
-                                            <line x1='1.42108547e-14' y1='12.75' x2='43.3810511' y2='12.75'></line>
-                                            <path d='M31.4816144,0 C31.4816144,8.48285007 35.4922292,12.7242751 43.5134589,12.7242751'></path>
-                                            <path d='M31.4816144,12.75 C31.4816144,21.2328501 35.4922292,25.4742751 43.5134589,25.4742751' transform='translate(37.497537, 19.112138) scale(1, -1) translate(-37.497537, -19.112138) '></path>
-                                        </g>
-                                    </svg>
-                                </h2>
-                                <p class="meta-title" style="color:#{{ project.hex2 }};">{{ project.type }}<span class="muted-text">|</span>{{ project.role }}{% if project.role2 %}<span class="muted-text">✕</span>{{ project.role2 }}{% endif %}{% if project.role3 %}<span class="muted-text">✕</span>{{ project.role3 }}{% endif %}</p>
-                            </div>
-                        </div>
-                </a>
-            {% endfor %}
         </div>
         <div class="wrapper">
             {% include footer.html %}
