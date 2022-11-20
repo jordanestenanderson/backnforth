@@ -1,36 +1,15 @@
 header {
   position:sticky;
-  width: 100%;
   top: 0;
   z-index: 1;
-  height: $header-height;
-  .brand-animation {
-    height: $header-height;
-    display: inline-block;
-  }
+  height: $space-xl;
 }
-.burger {
-  display: none;
-}
-html.js .burger-wrap {
-  padding:16px;
-  width: 20px;
-  height: 20px;
-  margin-left: auto;
-  cursor: pointer;
-  .burger {
-    display: block;
-    position: relative;
-    line-height: 0;
-    margin-top:-1px;
-    @include transition(350ms);
-    svg line {
-      stroke: $white;
-      stroke-width: 12px;
-      fill:none;
-    }
-    &.open {
-      @include rotate(45deg);
+.brand {
+  svg {
+    height: $space-md;
+    width: auto;
+    @include breakpoint-sm {
+      height: $space-sm;
     }
   }
 }

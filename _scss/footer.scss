@@ -1,0 +1,21 @@
+footer {
+  .footer-container {
+    padding: $space-md 0;
+    .footer-content {
+      width: 200px;
+    }
+    .iconlink {
+      width: 32px;
+      height: 32px;
+    }
+    @include breakpoint-md {
+      flex-direction: column;
+      .footer-content {
+        width: 100%;
+        .body-base {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

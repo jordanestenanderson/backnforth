@@ -1,229 +1,220 @@
-// SF UI Text
-@font-face {
-  font-family: 'SFUIText';
-  src: url('../assets/fonts/SF-UI-Text-Regular.woff') format('woff'),
-       url('../assets/fonts/SF-UI-Text-Regular.ttf')  format('truetype');
-  font-style:   normal;
-  font-weight:  400;
-}
-@font-face {
-  font-family: "SFUIText";
-  src: url('../assets/fonts/SF-UI-Text-Semibold.woff') format('woff'),
-       url('../assets/fonts/SF-UI-Text-Semibold.ttf')  format('truetype');
-  font-style:   normal;
-  font-weight:  600;
-}
-// SF UI Display
-@font-face {
-  font-family: "SFUIDisplay";
-  src: url('../assets/fonts/SF-UI-Display-Regular.woff') format('woff'),
-       url('../assets/fonts/SF-UI-Display-Regular.ttf')  format('truetype');
-  font-style:   normal;
-  font-weight:  400;
-}
-@font-face {
-  font-family: "SFUIDisplay";
-  src: url('../assets/fonts/SF-UI-Display-Medium.woff') format('woff'),
-       url('../assets/fonts/SF-UI-Display-Medium.ttf')  format('truetype');
-  font-style:   normal;
-  font-weight:  500;
-}
-@font-face {
-  font-family: "SFUIDisplay";
-  src: url('../assets/fonts/SF-UI-Display-Semibold.woff') format('woff'),
-       url('../assets/fonts/SF-UI-Display-Semibold.ttf')  format('truetype');
-  font-style:   normal;
-  font-weight:  600;
-}
 html {
-  font-family: "SFUIText", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: $white;
-  font-weight: 400;
-  font-size:16px;
-  line-height: 1.4;
-}
-h1 {
-  font-family: "SFUIDisplay", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 3.25rem;
-  line-height: 1.2;
-  letter-spacing: 0.2px;
-  margin: $xs-space 0;
-}
-h2 {
-  font-family: "SFUIDisplay", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size:  2.125rem;
-  line-height: 1.2;
-  letter-spacing: 0.2px;
-  margin: $xs-space 0;
-}
-.meta-title {
-  font-family: "SFUIDisplay", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 500;
-  font-size:  0.75rem;
-  letter-spacing: 2px;
-  text-transform:uppercase;
-  span {
-    padding:0 4px;
-    opacity: $opacity;
+  font-family: $family-base;
+  color: $neutral-700;
+  font-weight: $font-base;
+  font-size: 16px;
+  line-height: $leading-base;
+  @include breakpoint-sm {
+    font-size:14px;
   }
-  &.hero {
-    font-weight: 600;
-    font-size: 0.875rem;
-  }
-}
-p {
-  font-size: 1.125rem;
-  margin: $xs-space 0;
-}
-blockquote {
-  .blockquote-bug {
-    display:block;
-    width: 32px;
-    margin-bottom:$xs-space;
-    height:auto;
-    path {
-      fill:$white;
-    }
-  }
-  margin-left: 0;
-  font-size: 1.125rem;
-  font-style: italic;
-  position:relative;
-  margin: $xs-space 0;
-}
-.desktop-alignright {
-  text-align: right;
-}
-.desktop-aligncenter {
-  text-align: center;
-}
-.no-margin {
-  margin: 0;
-}
-ul {
-  list-style: none;
-}
-a {
-  @include transition(350ms);
-  color: $white;
-  text-decoration: none;
-  svg.white-icon path {
-    fill:$white;
-  }
-  &.underlined {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 1px;
-    padding-bottom:1px;
-    &:hover {
-      background-size: 100% 1px;
-    }
-  }
-}
-.hoverstate {
-  opacity: 1;
-  &:hover {
-    opacity: 0.65;
-  }
-}
-.btn-sml, .btn-disabled {
-  font-weight: 500;
-  font-size: 1.125rem;
-  text-transform:uppercase;
-  position:relative;
-  padding-bottom:4px;
-  display: inline-block;
-  border-color: inherit;
-  overflow: hidden;
-  @include transition(350ms);
-}
-
-.btn-sml:before, .btn-sml:after, .btn-disabled:before, .btn-disabled:after {
-    width: 100%;
-    border-bottom:2px solid;
-    border-color: inherit;
-    display: block;
-    content: '';
-    -webkit-transition:  transform .4s ease-in-out, border-color 350ms ease-out 600ms;
-    -moz-transition:    transform .4s ease-in-out, border-color 350ms ease-out 600ms;
-    -o-transition:    transform .4s ease-in-out, border-color 350ms ease-out 600ms;
-    transition:       transform .4s ease-in-out, border-color 350ms ease-out 600ms;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    -webkit-transition-delay: .5s;
-    -o-transition-delay: .5s;
-    transition-delay: .5s;
-}
-.btn-sml:before, .btn-disabled:before {
-    -moz-transform: translate(-101%,0);
-    -o-transform: translate(-101%,0);
-    -ms-transform: translate(-101%,0);
-    -webkit-transform: translate(-101%,0);
-    transform: translate(-101%,0);
-    -webkit-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-}
-.btn-sml:hover:before {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -moz-transform: translate(0,0);
-    -o-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0);
-    -webkit-transition-delay: .5s;
-    -o-transition-delay: .5s;
-    transition-delay: .5s;
-}
-.btn-sml:hover:after {
-    -moz-transform: translate(101%,0);
-    -o-transform: translate(101%,0);
-    -ms-transform: translate(101%,0);
-    -webkit-transform: translate(101%,0);
-    transform: translate(101%,0);
-    -webkit-transition-delay: 0s;
-    -o-transition-delay: 0s;
-    transition-delay: 0s;
-}
-svg {
-  fill: $white;
-}
-.brand svg {
-  height:$xs-space;
-  padding:$padding;
 }
 ::-moz-selection {
-  color: $black;
-  background: rgba(255,255,255,0.99);
+  color: $neutral-100;
+  background: $blue
 }
 ::selection {
-  color: $black; 
-  background: rgba(255,255,255,0.99);
+  color: $neutral-100;
+  background: $blue;
 }
-@media only screen and (max-width:$m-breakpoint) {
-  h1 {
-    font-size:2rem;
-  }
-  h2 {
-    font-size:1.35rem;
-  }
-  p, li, blockquote {
-    font-size:1rem;
-  }
-  .meta-title {
-    font-size:  0.65rem;
-    &.hero {
-      font-size: 0.75rem;
+a, svg.hoverable path {
+  @include transition(350ms);
+}
+a {
+  color: $blue;
+  &:hover {
+    color: $neutral-700;
+    svg.hoverable {
+      path {
+        fill: $blue;
+      }
     }
   }
-  .tablet-aligncenter {
-    text-align: center;
+}
+.title-5xl {
+  font-family: $family-display;
+  font-weight: $font-black;
+  font-size: $text-5xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+}
+.title-4xl {
+  font-family: $family-display;
+  font-weight: $font-black;
+  font-size: $text-4xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+}
+.title-3xl {
+  font-family: $family-display;
+  font-weight: $font-bold;
+  font-size: $text-3xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+}
+.title-2xl {
+  font-family: $family-display;
+  font-weight: $font-bold;
+  font-size: $text-2xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+}
+.title-xl {
+  font-family: $family-display;
+  font-weight: $font-bold;
+  font-size: $text-xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+}
+.title-lg {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-lg;
+  line-height: $leading-base;
+  letter-spacing: $tracking-lg;
+}
+.title-base {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-base;
+  line-height: $leading-base;
+  letter-spacing: $tracking-lg;
+}
+.title-sm {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: $leading-base;
+  letter-spacing: $tracking-lg;
+}
+.title-xs {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-xs;
+  line-height: $leading-base;
+  letter-spacing: $tracking-lg;
+}
+.overline-sm {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-sm;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-2xl;
+  text-transform: uppercase;
+}
+.overline-xs {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-xs;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-2xl;
+  text-transform: uppercase;
+}
+.overline-2xs {
+  font-family: $family-base;
+  font-weight: $font-bold;
+  font-size: $text-2xs;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-2xl;
+  text-transform: uppercase;
+}
+.title-5xl, .title-4xl, .title-3xl, .title-2xl, .title-xl, .title-lg, .title-base, .title-sm, .title-xs, .overline-sm, .overline-xs, .overline-2xs {
+  color: $neutral-900;
+  em {
+    font-style: italic;
   }
-  .btn-sml, .btn-disabled {
-    font-size: 1rem;
+  &.white, .white {
+    color: $neutral-100;
+  }
+  &.grey, .grey {
+    color: $neutral-700;
+  }
+  &.blue, .blue {
+    color: $blue;
+  }
+  &.purple, .purple {
+    color: $purple;
+  }
+}
+.body-lg {
+  font-size: $text-lg;
+}
+.body-base {
+  font-size: $text-base;
+}
+.body-sm {
+  font-size: $text-sm;
+}
+.body-xs {
+  font-size: $text-xs;
+}
+.body-lg, .body-base, .body-sm, .body-xs {
+  font-family: $family-base;
+  color: $neutral-700;
+  font-weight: $font-base;
+  line-height: $leading-base;
+  letter-spacing: $tracking-lg;
+  strong {
+    color: $neutral-800;
+    font-weight: $font-bold;
+  }
+  em {
+    font-style: italic;
+  }
+  &.align-left {
+    text-align: left;
+  }
+  &.align-right {
+    text-align: right;
+  }
+  a {
+    color: $blue;
+    text-decoration: underline;
+    &:hover {
+      color: $neutral-700;
+    }
+    &.inverse {
+      color: $neutral-700;
+      text-decoration: none;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  &.white, .white {
+    color: $neutral-300;
+    a {
+      color: $blue;
+      text-decoration: underline;
+      &:hover {
+        color: $neutral-300;
+      }
+    }
+  }
+}
+.quote-2xl {
+  font-weight: $font-light;
+  font-size: $text-2xl;
+}
+.quote-lg {
+  font-weight: $font-base;
+  font-size: $text-lg;
+}
+.quote-2xl, .quote-lg {
+  font-family: $family-base;
+  color: $neutral-800;
+  line-height: $leading-lg;
+  letter-spacing: $tracking-lg;
+  font-style: italic;
+  &.white, .white {
+    color: $neutral-100;
+  }
+  &.grey, .grey {
+    color: $neutral-700;
+  }
+  &.blue, .blue {
+    color: $blue;
+  }
+  &.purple, .purple {
+    color: $purple;
   }
 }

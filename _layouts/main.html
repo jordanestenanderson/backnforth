@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html id="htmlTrigger">
+<html>
   {% include head.html %}
-  {% include header.html %}
   <body class="body">
-    
-    <div id="content-container">
-      {{ content }}
-    </div>
-
-    <div class="overlay" id="overlayTrigger">
-      {% include pullout.html %}
-    </div>
-
+    {% include header.html %}
+      <div id="content-container">
+        {{ content }}
+      </div>
+    {% include footer.html %}
   </body>
 </html>

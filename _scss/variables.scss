@@ -1,32 +1,107 @@
 /****WRAPPER*****/
-$wrapper: 1800px;
-$s-wrapper: 1200px;
+$wrapper-xs: 600px;
+$wrapper-sm: 800px;
+$wrapper-md: 1200px;
+$wrapper-lg: 1800px;
 
 /****BREAKPOINTS*****/
-$m-breakpoint: 992px;
-$l-breakpoint: 1300px;
+$breakpoint-sm: 540px;
+$breakpoint-md: 768px;
 
 /****SPACE*****/
-$space: 8px;
-$xs-space: $space * 2;
-$s-space: $space * 3;
-$r-space: $space * 4;
-$m-space: $space * 6;
-$l-space: $space * 12;
-$xl-space: $space * 24;
+$space-3xs: 4px;
+$space-2xs: $space-3xs * 2; /*8px*/
+$space-xs: $space-3xs * 4; /*16px*/
+$space-sm: $space-3xs * 6; /*24px*/
+$space-md: $space-3xs * 8; /*32px*/
+$space-lg: $space-3xs * 12; /*48px*/
+$space-xl: $space-3xs * 20; /*80px*/
+$space-2xl: $space-3xs * 28; /*112px*/
+$space-3xl: $space-3xs * 40; /*160px*/
 
 /****COLORS*****/
-$grey: #f1f1f1;
-$darkgrey: #585858;
-$black: #1b1b1b;
-$white: #ffffff;
+$blue: #38AAEB;
+$purple: #7433FF;
+$gradient: linear-gradient(237.95deg, #707EFD 0%, #7433FF 100%);
+$alert: linear-gradient(225deg, #FF5A5A 0%, #E12267 100%);
+
+$neutral-900: #2C2D30;
+$neutral-800: #454B55;
+$neutral-700: #616875;
+$neutral-600: #8D94A1;
+$neutral-500: #B3B9C5;
+$neutral-400: #D2D6E0;
+$neutral-300: #E8ECF1;
+$neutral-200: #F4F5F7;
+$neutral-100: #FFFFFF;
+
+$error-800: #8F0526;
+$error-700: #E00B3E;
+$error-300: #FFE3E9;
+
+$success-800: #064E3B;
+$success-700: #10B981;
+$success-300: #D1FAE5;
+
+$warning-800: #78350F;
+$warning-700: #F59E0B;
+$warning-300: #FEF3C7;
+
+$info-800: #0C4A6E;
+$info-700: #0EA5E9;
+$info-300: #E0F2FE;
+
+/****SHADOWS*****/
+$shadow-sm: 0px 1px 2px -1px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.08);
+$shadow-md: 0px 2px 4px -2px rgba(0, 0, 0, 0.04), 0px 4px 6px -1px rgba(0, 0, 0, 0.04);
+$shadow-lg: 0px 4px 6px -4px rgba(0, 0, 0, 0.04), 0px 10px 15px -3px rgba(0, 0, 0, 0.04);
+$shadow-xl: 0px 8px 10px -6px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.04);
 
 /****OPACITY*****/
-$opacity: 0.4;
+$opacity-0: 0;
+$opacity-20: 0.2;
+$opacity-40: 0.4;
+$opacity-60: 0.6;
+$opacity-80: 0.8;
+$opacity-100: 1;
 
-/****STYLES*****/
-$padding: 18px;
-$header-height: 52px;
-$border-radius: 16px;
-$border-radius-s: 12px;
-$border-radius-xs: 8px;
+/****BORDER RADIUS*****/
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 16px;
+$border-radius-xl: 80px;
+
+/****FONT FAMILY*****/
+$family-display: degular, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-base: acumin-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+/****FONT WEIGHT*****/
+$font-light: 300;
+$font-base: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 800;
+
+/****FONT SIZE*****/
+$text-2xs: 0.625rem;
+$text-xs: 0.75rem;
+$text-sm: 0.875rem;
+$text-base: 1rem;
+$text-lg: 1.25rem;
+$text-xl: 1.5rem;
+$text-2xl: 2rem;
+$text-3xl: 2.5rem;
+$text-4xl: 3.5rem;
+$text-5xl: 4.5rem;
+
+/****FONT LEADING*****/
+$leading-sm: 110%;
+$leading-base: 125%;
+$leading-lg: 150%;
+
+/****FONT TRACKING*****/
+$tracking-base: 0px;
+$tracking-lg: 0.2px;
+$tracking-xl: 0.4px;
+$tracking-2xl: 1.2px;
