@@ -1,15 +1,18 @@
 header {
+  background: $neutral-200;
   position:sticky;
   top: 0;
   z-index: 1;
-  height: $space-xl;
-}
-.brand {
-  svg {
-    height: $space-md;
-    width: auto;
-    @include breakpoint-sm {
-      height: $space-sm;
+  nav {
+    height: $space-xl;
+  }
+  .brand {
+    svg {
+      height: $space-md;
+      width: auto;
+      @include breakpoint-sm {
+        height: $space-sm;
+      }
     }
   }
 }

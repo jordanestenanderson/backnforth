@@ -16,11 +16,50 @@ html {
 .wrapper-lg {
 	max-width: $wrapper-lg;
 }
-.wrapper-xs, .wrapper-xs, .wrapper-xs, .wrapper-xs, .wrapper-fluid {
+.wrapper-xs, .wrapper-sm, .wrapper-md, .wrapper-lg, .wrapper-fluid {
 	margin:0 auto;
 	padding: 0 $space-xs;
+	&.inset {
+		padding: 0 $space-md;
+	}
 	&.centered {
 		text-align:center;
+	}
+}
+.container-2xs {
+	margin: $space-sm 0;
+	@include breakpoint-md {
+	  margin: $space-xs 0;
+	}
+}
+.container-xs {
+	margin: $space-md 0;
+	@include breakpoint-md {
+	  margin: $space-sm 0;
+	}
+}
+.container-sm {
+	margin: $space-lg 0;
+	@include breakpoint-md {
+	  margin: $space-md 0;
+	}
+}
+.container-md {
+	margin: $space-xl 0;
+	@include breakpoint-md {
+	  margin: $space-lg 0;
+	}
+}
+.container-lg {
+	margin: $space-2xl 0;
+	@include breakpoint-md {
+	  margin: $space-xl 0;
+	}
+}
+.container-xl {
+	margin: $space-3xl 0;
+	@include breakpoint-md {
+	  margin: $space-2xl 0;
 	}
 }
 .flex {
@@ -68,13 +107,36 @@ html {
 .flex-grow {
 	flex-grow: 1;
 }
-.image-fit {
+.flex-half {
+	flex: 0 0 50%;
+}
+.flex-onethird {
+	flex: 0 0 33.33333333%;
+}
+.flex-twothirds {
+	flex: 0 0 66.66666666%;
+}
+.fitted-background {
 	overflow: hidden;
 	position:relative;
-	img {
+	border-radius: $border-radius-lg;
+	@include breakpoint-md {
+	  border-radius: $border-radius-md;
+	}
+	.fitted-image {
 		object-fit: cover;
 		position:absolute;
+		top:0;
+		left:0;
 		width: 100%;
 		height: 100%;
 	}
+}
+.index {
+	z-index:1;
+	position: relative;
+}
+img {
+	width:100%;
+	height:auto;
 }

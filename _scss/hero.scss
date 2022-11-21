@@ -1,0 +1,12 @@
+.hero-content-container {
+  padding: $space-lg 0 $space-3xl 0;
+}
+.hero-graphic-container {
+  margin-top: -$space-2xl;
+  img {
+    border-radius: $border-radius-lg;
+    @include breakpoint-md {
+      border-radius: $border-radius-md;
+    }
+  }
+}

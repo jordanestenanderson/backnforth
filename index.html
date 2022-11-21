@@ -3,14 +3,39 @@ layout: main
 metatitle: BacknForth
 metadescription: Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada.
 metaimg: meta.jpg
+
+herotagline: This ain't your daddies app
+herotitle: A better way to monetize & engage with your audience
+herodescription: Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.
+herobackground: purple-background.jpg
+heroimg: canvas-graphic.jpg
+
+whytitle: Monetize your audience faster, in the way that makes sense
+whydescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
 ---
-<div>
-    <div>
-        <div class="wrapper-xs centered" data-aos="fade-down">
-            <h4 class="overline-sm grey">This ain't your daddies app</h4>
-            <h1 class="title-5xl">Helping creatives learn and earn</h1>
-            <p class="body-lg">Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.</p>
-            <a class="button-lg" href="#"><span>Sign up</span></a>
+<div class="content">
+    <div class="hero" data-aos="fade-down">
+        <div class="wrapper-md">
+            <div class="hero-content-container fitted-background">
+                <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Dark black  gradient background" />
+                <div class="wrapper-xs centered index">
+                    <!--<h4 class="overline-sm blue">{{ page.herotagline }}</h4>-->
+                    <h1 class="title-5xl white">{{ page.herotitle }}</h1>
+                    <p class="body-lg white">{{ page.herodescription }}</p>
+                    <!--<a class="button-lg" href="#"><span>Sign up</span></a>-->
+                </div>
+            </div>
+        </div>
+        <div class="hero-graphic-container wrapper-sm inset centered index">
+            <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="BacknForth app creator image canvas annotation screen" />
+        </div>
+    </div>
+    <div class="container-2xs introduction">
+        <div class="wrapper-sm inset">
+            <div class="flex align-center gap-md">
+                <h2 class="flex-half title-3xl">{{ page.whytitle }}</h2>
+                <p class="flex-half body-lg">{{ page.whydescription }}</p>
+            </div>
         </div>
     </div>
 </div>
