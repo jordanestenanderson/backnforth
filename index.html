@@ -12,6 +12,14 @@ heroimg: canvas-graphic.jpg
 
 whytitle: Monetize your audience faster, in the way that makes sense
 whydescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+
+howtitle: How does it work?
+steponetitle: Create an engagement
+steponedescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+steptwotitle: Share it with your audience
+steptwodescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+stepthreetitle: Respond to submissions
+stepthreedescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
 ---
 <div class="content">
     <div class="hero" data-aos="fade-down">
@@ -35,6 +43,38 @@ whydescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel f
             <div class="flex align-center gap-md">
                 <h2 class="flex-half title-3xl">{{ page.whytitle }}</h2>
                 <p class="flex-half body-lg">{{ page.whydescription }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-2xs introduction">
+        <div class="wrapper-md inset">
+            <div class="flex align-center">
+                <h2 class="flex-half title-3xl">{{ page.howtitle }}</h2>
+            </div>
+
+                <div class="flex">
+                    <div class="flex-onethird">
+                        {% include step1.html %}
+                        <div>
+                            <h3 class="title-xl">{{ page.steponetitle }}</h3>
+                            <p class="body-base">{{ page.steponedescription }}</p>
+                        </div>
+                    </div>
+                    <div class="flex-onethird">
+                        {% include step2.html %}
+                        <div>
+                            <h3 class="title-xl">{{ page.steptwotitle }}</h3>
+                            <p class="body-base">{{ page.steptwodescription }}</p>
+                        </div>
+                    </div>
+                    <div class="flex-onethird">
+                        {% include step3.html %}
+                        <div>
+                            <h3 class="title-xl">{{ page.stepthreetitle }}</h3>
+                            <p class="body-base">{{ page.stepthreedescription }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
