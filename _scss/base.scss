@@ -2,7 +2,7 @@
 	box-sizing:border-box;
 }
 html {
-    background:$neutral-200;
+    background:$neutral-900;
 }
 .wrapper-xs {
 	max-width: $wrapper-xs;
@@ -110,11 +110,38 @@ html {
 .flex-half {
 	flex: 0 0 50%;
 }
-.flex-onethird {
+.flex-third {
 	flex: 0 0 33.33333333%;
 }
-.flex-twothirds {
-	flex: 0 0 66.66666666%;
+.grid {
+	display:grid;
+	&.grid-half {
+		grid-template-columns: 1fr 1fr;
+	}
+	&.grid-third {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	&.gap-2xs {
+		grid-gap: $space-2xs;
+	}
+	&.gap-xs {
+		grid-gap: $space-xs;
+	}
+	&.gap-sm {
+		grid-gap: $space-sm;
+	}
+	&.gap-md {
+		grid-gap: $space-md;
+	}
+	&.gap-lg {
+		grid-gap: $space-lg;
+	}
+	&.gap-xl {
+		grid-gap: $space-xl;
+	}
+	&.gap-2xl {
+		grid-gap: $space-2xl;
+	}
 }
 .fitted-background {
 	overflow: hidden;

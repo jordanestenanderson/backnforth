@@ -15,18 +15,17 @@ whydescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel f
 
 howtitle: How does it work?
 steponetitle: Create an engagement
-steponedescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+steponedescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 steptwotitle: Share it with your audience
-steptwodescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+steptwodescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 stepthreetitle: Respond to submissions
-stepthreedescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
+stepthreedescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 ---
 <div class="content">
     <div class="hero" data-aos="fade-down">
         <div class="wrapper-md">
-            <div class="hero-content-container fitted-background">
-                <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Dark black  gradient background" />
-                <div class="wrapper-xs centered index">
+            <div class="hero-content-container">
+                <div class="wrapper-xs centered">
                     <!--<h4 class="overline-sm blue">{{ page.herotagline }}</h4>-->
                     <h1 class="title-5xl white">{{ page.herotitle }}</h1>
                     <p class="body-lg white">{{ page.herodescription }}</p>
@@ -34,44 +33,46 @@ stepthreedescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor
                 </div>
             </div>
         </div>
-        <div class="hero-graphic-container wrapper-sm inset centered index">
-            <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="BacknForth app creator image canvas annotation screen" />
-        </div>
     </div>
-    <div class="container-2xs introduction">
-        <div class="wrapper-sm inset">
-            <div class="flex align-center gap-md">
-                <h2 class="flex-half title-3xl">{{ page.whytitle }}</h2>
-                <p class="flex-half body-lg">{{ page.whydescription }}</p>
+    <div class="fitted-background introduction" data-aos="fade-down">
+        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Bright purple  gradient background" />
+            <div class="wrapper-md hero-graphic-container centered index">
+                <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="BacknForth app creator image canvas annotation screen" />
             </div>
-        </div>
+            <div class="wrapper-sm grid grid-half gap-md index introduction-content">
+                <h2 class="title-3xl white">{{ page.whytitle }}</h2>
+                <p class="body-lg white">{{ page.whydescription }}</p>
+            </div>
     </div>
-    <div class="container-2xs introduction">
+    <div class="container-lg how-it-works" data-aos="fade-down">
         <div class="wrapper-md inset">
-            <div class="flex align-center">
-                <h2 class="flex-half title-3xl">{{ page.howtitle }}</h2>
+            <div class="flex justify-center">
+                <h2 class="flex title-3xl white">{{ page.howtitle }}</h2>
             </div>
-
-                <div class="flex">
-                    <div class="flex-onethird">
+            <div class="grid grid-half gap-md">
+                <div class="fitted-background">
+                    <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Bright purple  gradient background" />
+                </div>
+                <div class="grid gap-2xs">
+                    <div class="flex gap-xs">
                         {% include step1.html %}
                         <div>
-                            <h3 class="title-xl">{{ page.steponetitle }}</h3>
-                            <p class="body-base">{{ page.steponedescription }}</p>
+                            <h3 class="title-xl white">{{ page.steponetitle }}</h3>
+                            <p class="body-base white">{{ page.steponedescription }}</p>
                         </div>
                     </div>
-                    <div class="flex-onethird">
+                    <div class="flex gap-xs">
                         {% include step2.html %}
                         <div>
-                            <h3 class="title-xl">{{ page.steptwotitle }}</h3>
-                            <p class="body-base">{{ page.steptwodescription }}</p>
+                            <h3 class="title-xl white">{{ page.steptwotitle }}</h3>
+                            <p class="body-base white">{{ page.steptwodescription }}</p>
                         </div>
                     </div>
-                    <div class="flex-onethird">
+                    <div class="flex gap-xs">
                         {% include step3.html %}
                         <div>
-                            <h3 class="title-xl">{{ page.stepthreetitle }}</h3>
-                            <p class="body-base">{{ page.stepthreedescription }}</p>
+                            <h3 class="title-xl white">{{ page.stepthreetitle }}</h3>
+                            <p class="body-base white">{{ page.stepthreedescription }}</p>
                         </div>
                     </div>
                 </div>

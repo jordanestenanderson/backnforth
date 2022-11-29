@@ -45,8 +45,8 @@ a.button-lg, a.button-base, a.button-sm {
   }
   &.secondary {
     background: transparent;
-    color: $neutral-900;
-    border: 1px solid $neutral-400;
+    color: $neutral-100;
+    border: 1px solid $neutral-800;
     &:after {
       display:none;
     }
