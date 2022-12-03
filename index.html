@@ -7,6 +7,8 @@ metaimg: meta.jpg
 herotagline: This ain't your daddies app
 herotitle: A better way to monetize & engage with your audience
 herodescription: Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.
+heroactiontext: Get started
+heroactionlink: #
 herobackground: purple-background.jpg
 herobackgroundalt: Bright purple gradient background
 heroimg: canvas-graphic.jpg
@@ -76,6 +78,7 @@ ctaactionlink: #
                     <!--<h4 class="overline-sm blue">{{ page.herotagline }}</h4>-->
                     <h1 class="title-5xl white">{{ page.herotitle }}</h1>
                     <p class="body-lg light">{{ page.herodescription }}</p>
+                    <a class="button-lg" href="{{ page.heroactionlink }}"><span>{{ page.heroactiontext }}</span></a>
                     <!--<a class="button-lg" href="#"><span>Sign up</span></a>-->
                 </div>
             </div>
@@ -84,7 +87,7 @@ ctaactionlink: #
     <!-------Introduction------->
     <div class="fitted-background introduction" data-aos="fade-down">
         <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
-            <div class="wrapper-md hero-graphic-container centered index">
+            <div class="wrapper-sm hero-graphic-container centered index">
                 <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="{{ page.heroimgalt }}" />
             </div>
             <div class="wrapper-sm grid grid-half gap-md index introduction-content">
@@ -250,13 +253,15 @@ ctaactionlink: #
     <!-------Call To Action------->
     <div class="container-sm cta" data-aos="fade-down">
         <div class="wrapper-md fitted-background">
-            <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
-            <div class="index grid cta-row container-xs">
-                <div>
-                    <h2 class="title-3xl white">{{ page.ctatitle }}</h2>
-                    <p class="body-base white">{{ page.ctadescription }}</p>
+            <div class="fitted-background">
+                <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
+                <div class="grid cta-row container-xs">
+                    <div class="index">
+                        <h2 class="title-3xl white">{{ page.ctatitle }}</h2>
+                        <p class="body-base white">{{ page.ctadescription }}</p>
+                    </div>
+                    <a class="button-lg dark" href="{{ page.ctaactionlink }}"><span>{{ page.ctaactiontext }}</span></a>
                 </div>
-                <a class="button-lg dark" href="{{ page.ctaactionlink }}"><span>{{ page.ctaactiontext }}</span></a>
             </div>
         </div>
     </div>
