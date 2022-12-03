@@ -1,0 +1,10 @@
+.faq {
+  h2 {
+    padding-bottom: $space-lg;
+  }
+  .faq-row {
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: $space-lg;
+    row-gap: $space-xs;
+  }
+}

@@ -17,6 +17,7 @@ a.button-lg, a.button-base, a.button-sm {
   line-height: 100%;
   letter-spacing: $tracking-xl;
   text-transform: uppercase;
+  text-align:center;
   border-radius: $border-radius-xl;
   background: $gradient;
   color: $neutral-100;
@@ -53,6 +54,17 @@ a.button-lg, a.button-base, a.button-sm {
     &:hover {
       color: $blue;
       border-color: $blue;
+    }
+  }
+  &.dark {
+    background: $neutral-900;
+    color: $neutral-100;
+    &:after {
+      display:none;
+    }
+    &:hover {
+      color: $neutral-900;
+      background: $neutral-100;
     }
   }
 }

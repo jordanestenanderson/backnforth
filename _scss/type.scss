@@ -180,13 +180,23 @@ a {
       }
     }
   }
-  &.white, .white {
-    color: $neutral-300;
+  &.light, .light {
+    color: $neutral-400;
     a {
       color: $blue;
       text-decoration: underline;
       &:hover {
-        color: $neutral-300;
+        color: $neutral-400;
+      }
+    }
+  }
+  &.white, .white {
+    color: $neutral-100;
+    a {
+      color: $blue;
+      text-decoration: underline;
+      &:hover {
+        color: $neutral-100;
       }
     }
   }

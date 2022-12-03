@@ -1,16 +1,45 @@
 .how-it-works {
   h2 {
-    padding-bottom:$space-md;
+    padding-bottom: $space-sm;
   }
-  svg {
-    width:34px;
+  .step-number svg {
+    width:40px;
+    height:40px;
   }
-  .grid {
+  .step-row {
+    grid-template-columns: 1fr 40px 1fr;
+    align-items: center;
     h3 {
       padding-top:$space-2xs;
     }
-    p {
+    .list-icon, p {
       margin-top:$space-2xs;
     }
+    .step-number {
+      height:100%;
+    }
+  }
+  .step-divider {
+    height:$space-2xl;
+    width:100%;
+    &:after {
+      content: "";
+      display: block;
+      width:1px;
+      height:100%;
+      background-color: #454B55;
+      margin:0 auto;
+    }
+  }
+  .step-number:before, .step-number:after {
+    content: "";
+    display: block;
+    width:1px;
+    height: calc(50% - 20px);
+    background-color: #454B55;
+    margin:0 auto;
+  }
+  .step-3 .step-number:after {
+    display:none;
   }
 }

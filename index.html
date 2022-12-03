@@ -1,6 +1,6 @@
 ---
 layout: main
-metatitle: BacknForth
+metatitle: Back n Forth
 metadescription: Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada.
 metaimg: meta.jpg
 
@@ -8,74 +8,255 @@ herotagline: This ain't your daddies app
 herotitle: A better way to monetize & engage with your audience
 herodescription: Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.
 herobackground: purple-background.jpg
+herobackgroundalt: Bright purple gradient background
 heroimg: canvas-graphic.jpg
+heroimgalt: Back n Forth app creator image canvas annotation screen
 
 whytitle: Monetize your audience faster, in the way that makes sense
 whydescription: Vestibulum elit tortor, mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante, eget tempor justo, fusce lobortis pellentesque eros eget posuere aliquam pellentesque sit amet massa et scelerisque.
 
 howtitle: How does it work?
+steponegraphic: step-1.png
+steponegraphicalt: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 steponetitle: Create an engagement
-steponedescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steponedescription: Create elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steptwographic: step-2.png
+steptwographicalt: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 steptwotitle: Share it with your audience
-steptwodescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steptwodescription: Share elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepthreegraphic: step-3.png
+stepthreegraphicalt: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
 stepthreetitle: Respond to submissions
-stepthreedescription: Vestibulum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepthreedescription: Respond elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+featurestitle: Key features
+featuresonetitle: Flexibility
+featuresoneitem1: Anywhere, anytime
+featuresoneitem2: Ease, get started in minutes
+featuresoneitem3: Build it how you want
+featuresoneitem4: Freedom of how you respond
+featuresoneitem5: Setup in minutes
+featurestwotitle: Intimacy
+featurestwoitem1: 1:1 support with your audience
+featurestwoitem2: Mutually beneficial
+featurestwoitem3: Direct feedback
+featurestwoitem4: Give your audience a direct line
+featurestwoitem5: Spread 'em
+featuresthreetitle: Support
+featuresthreeitem1: Affordable for audience
+featuresthreeitem2: Fund your work
+featuresthreeitem3: Monitize faster & with ease
+featuresthreeitem4: Another avenue of funding
+featuresthreeitem5: Support your audience
+
+faqtitle: Frequently asked questions
+faqonetitle:  The first question you have for me, no question is a bad question
+faqonedescription: One elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+faqtwotitle: The second question you have for me, no question is a bad question
+faqtwodescription: Two elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+faqthreetitle: The third question you have for me, no question is a bad question
+faqthreedescription: Three elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+faqfourtitle: The fourth question you have for me, no question is a bad question
+faqfourdescription: Four elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+faqfivetitle: The fifth question you have for me, no question is a bad question
+faqfivedescription: Five elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+
+ctatitle: Get started in minutes
+ctadescription: Lorem ipsum elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+ctaactiontext: Get Started
+ctaactionlink: #
 ---
 <div class="content">
+    <!-------Hero------->
     <div class="hero" data-aos="fade-down">
         <div class="wrapper-md">
             <div class="hero-content-container">
                 <div class="wrapper-xs centered">
                     <!--<h4 class="overline-sm blue">{{ page.herotagline }}</h4>-->
                     <h1 class="title-5xl white">{{ page.herotitle }}</h1>
-                    <p class="body-lg white">{{ page.herodescription }}</p>
+                    <p class="body-lg light">{{ page.herodescription }}</p>
                     <!--<a class="button-lg" href="#"><span>Sign up</span></a>-->
                 </div>
             </div>
         </div>
     </div>
+    <!-------Introduction------->
     <div class="fitted-background introduction" data-aos="fade-down">
-        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Bright purple  gradient background" />
+        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
             <div class="wrapper-md hero-graphic-container centered index">
-                <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="BacknForth app creator image canvas annotation screen" />
+                <img src="{{ site.baseurl }}/assets/main/{{ page.heroimg }}" alt="{{ page.heroimgalt }}" />
             </div>
             <div class="wrapper-sm grid grid-half gap-md index introduction-content">
                 <h2 class="title-3xl white">{{ page.whytitle }}</h2>
                 <p class="body-lg white">{{ page.whydescription }}</p>
             </div>
     </div>
+    <!-------How It Works------->
     <div class="container-lg how-it-works" data-aos="fade-down">
-        <div class="wrapper-md inset">
+        <div class="wrapper-md">
             <div class="flex justify-center">
                 <h2 class="flex title-3xl white">{{ page.howtitle }}</h2>
             </div>
-            <div class="grid grid-half gap-md">
-                <div class="fitted-background">
-                    <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="Bright purple  gradient background" />
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-1 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steponegraphic }}" alt="{{ page.steponegraphicalt }}" />
                 </div>
-                <div class="grid gap-2xs">
-                    <div class="flex gap-xs">
-                        {% include step1.html %}
-                        <div>
-                            <h3 class="title-xl white">{{ page.steponetitle }}</h3>
-                            <p class="body-base white">{{ page.steponedescription }}</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-xs">
-                        {% include step2.html %}
-                        <div>
-                            <h3 class="title-xl white">{{ page.steptwotitle }}</h3>
-                            <p class="body-base white">{{ page.steptwodescription }}</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-xs">
-                        {% include step3.html %}
-                        <div>
-                            <h3 class="title-xl white">{{ page.stepthreetitle }}</h3>
-                            <p class="body-base white">{{ page.stepthreedescription }}</p>
-                        </div>
+                <div class="step-number">
+                    {% include step1.html %}
+                </div>
+                <div class="flex gap-xs">
+                    <div>
+                        <h3 class="title-2xl white">{{ page.steponetitle }}</h3>
+                        <p class="flex-grow body-base light">{{ page.steponedescription }}</p>
                     </div>
                 </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-2 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steptwographic }}" alt="{{ page.steptwographicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step2.html %}
+                </div>
+                <div class="flex gap-xs">
+                    <div>
+                        <h3 class="title-2xl white">{{ page.steptwotitle }}</h3>
+                        <p class="flex-grow body-base light">{{ page.steptwodescription }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-3 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepthreegraphic }}" alt="{{ page.stepthreegraphic }}" />
+                </div>
+                <div class="step-number">
+                    {% include step3.html %}
+                </div>
+                <div class="flex gap-xs">
+                    <div>
+                        <h3 class="title-2xl white">{{ page.stepthreetitle }}</h3>
+                        <p class="flex-grow body-base light">{{ page.stepthreedescription }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Features------->
+    <div class="container-lg features fitted-background" data-aos="fade-down">
+        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
+        <div class="container-lg">
+            <div class="wrapper-md index">
+                <div class="flex justify-center">
+                    <h2 class="flex title-3xl white">{{ page.featurestitle }}</h2>
+                </div>
+                <div class="grid grid-third gap-lg">
+                    <div>
+                        <h3 class="title-2xl white">{{ page.featuresonetitle }}</h3>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-search.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresoneitem1 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-folder.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresoneitem2 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresoneitem3 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresoneitem4 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresoneitem5 }}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="title-2xl white">{{ page.featurestwotitle }}</h3>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-search.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featurestwoitem1 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-folder.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featurestwoitem2 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featurestwoitem3 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featurestwoitem4 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featurestwoitem5 }}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="title-2xl white">{{ page.featuresthreetitle }}</h3>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-search.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresthreeitem1 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-folder.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresthreeitem2 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresthreeitem3 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresthreeitem4 }}</p>
+                        </div>
+                        <div class="flex gap-2xs">
+                            <div class="list-icon">{% include icon-bookmark.html %}</div>
+                            <p class="flex-grow body-base light">{{ page.featuresthreeitem5 }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Frequently Asked Questions------->
+    <div class="container-lg faq" data-aos="fade-down">
+        <div class="wrapper-sm">
+            <div class="flex justify-center">
+                <h2 class="flex title-3xl white">{{ page.faqtitle }}</h2>
+            </div>
+            <div class="grid faq-row">
+                <h3 class="title-xl white">{{ page.faqonetitle }}</h3>
+                <p class="body-base white">{{ page.faqonedescription }}</p>
+                <h3 class="title-xl white">{{ page.faqtwotitle }}</h3>
+                <p class="body-base white">{{ page.faqtwodescription }}</p>
+                <h3 class="title-xl white">{{ page.faqthreetitle }}</h3>
+                <p class="body-base white">{{ page.faqfourdescription }}</p>
+                <h3 class="title-xl white">{{ page.faqfourtitle }}</h3>
+                <p class="body-base white">{{ page.faqfourdescription }}</p>
+                <h3 class="title-xl white">{{ page.faqfivetitle }}</h3>
+                <p class="body-base white">{{ page.faqfivedescription }}</p>
+            </div>
+        </div>
+    </div>
+    <!-------Call To Action------->
+    <div class="container-sm cta" data-aos="fade-down">
+        <div class="wrapper-md fitted-background">
+            <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.herobackground }}" alt="{{ page.herobackgroundalt }}" />
+            <div class="index grid cta-row container-xs">
+                <div>
+                    <h2 class="title-3xl white">{{ page.ctatitle }}</h2>
+                    <p class="body-base white">{{ page.ctadescription }}</p>
+                </div>
+                <a class="button-lg dark" href="{{ page.ctaactionlink }}"><span>{{ page.ctaactiontext }}</span></a>
             </div>
         </div>
     </div>
