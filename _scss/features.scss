@@ -1,9 +1,25 @@
 .features {
-	border-radius: 0px;
-	h3 {
-	  padding-top:$space-lg;
+	.fitted-background {
+		border-radius: 0px;
+		margin-bottom:0;
+		.container-lg {
+			margin-bottom: $space-4xl;
+		}
 	}
-	.list-icon, p {
-	  margin-top:$space-2xs;
+	.grid {
+		margin-top: -$space-4xl;
+		.feature-card {
+			margin-top:$space-lg;
+			background:#fff;
+			border-radius: $border-radius-md;
+			position:relative;
+			z-index:1;
+			h3 {
+				background: $purple;
+			}
+			.list-icon, p {
+			  margin-top:$space-2xs;
+			}
+		}
 	}
 }
