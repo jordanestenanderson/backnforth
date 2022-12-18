@@ -1,5 +1,11 @@
 .hero-content-container {
   padding: $space-lg 0 $space-3xl 0;
+  @include breakpoint-md {
+    padding-top: $space-md;
+  }
+  .button-lg {
+    margin-top: $space-2xs;
+  }
 }
 .hero-graphic-container {
   img {

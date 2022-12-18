@@ -4,5 +4,16 @@
   .introduction-content {
     padding-top: $space-sm;
     padding-bottom: $space-2xl;
+    @include breakpoint-md {
+      grid-gap:0px;
+      padding-bottom: $space-lg;
+      max-width:600px;
+      text-align: center;
+    }
+    p {
+      @include breakpoint-md {
+        margin-top: $space-2xs;
+      }
+    }
   }
 }

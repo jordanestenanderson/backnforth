@@ -1,10 +1,18 @@
 .faq {
   h2 {
-    padding-bottom: $space-lg;
+    padding-bottom: $space-xs;
   }
   .faq-row {
-    grid-template-columns: 1fr 1.5fr;
-    column-gap: $space-lg;
-    row-gap: $space-xs;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $space-lg;
+    padding-top: $space-md;
+    @include breakpoint-md {
+      grid-template-columns: 1fr;
+      grid-gap: $space-3xs;
+      padding-top: $space-xs;
+      p {
+        margin-top:0px;
+      }
+    }
   }
 }

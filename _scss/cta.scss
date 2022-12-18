@@ -1,7 +1,12 @@
 .cta {
+	border-radius: 0px;
+	margin-bottom:0px;
 	.cta-row {
-		grid-template-columns: 1fr 200px;
+		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		padding: 0 $space-md;
+		.button-base {
+			margin-top:$space-2xs;
+		}
 	}
 }

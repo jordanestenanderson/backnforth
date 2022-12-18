@@ -18,12 +18,15 @@ html {
 }
 .wrapper-xs, .wrapper-sm, .wrapper-md, .wrapper-lg, .wrapper-fluid {
 	margin:0 auto;
-	padding: 0 $space-xs;
+	padding: 0 $space-md;
 	&.inset {
 		padding: 0 $space-md;
 	}
 	&.centered {
 		text-align:center;
+	}
+	@include breakpoint-md {
+	  padding: 0 $space-xs;
 	}
 }
 .container-2xs {
@@ -84,24 +87,45 @@ html {
 	}
 	&.gap-2xs {
 		gap: $space-2xs;
+		@include breakpoint-md {
+		  gap: $space-3xs;
+		}
 	}
 	&.gap-xs {
 		gap: $space-xs;
+		@include breakpoint-md {
+		  gap: $space-2xs;
+		}
 	}
 	&.gap-sm {
 		gap: $space-sm;
+		@include breakpoint-md {
+		  gap: $space-xs;
+		}
 	}
 	&.gap-md {
 		gap: $space-md;
+		@include breakpoint-md {
+		  gap: $space-sm;
+		}
 	}
 	&.gap-lg {
 		gap: $space-lg;
+		@include breakpoint-md {
+		  gap: $space-md;
+		}
 	}
 	&.gap-xl {
 		gap: $space-xl;
+		@include breakpoint-md {
+		  gap: $space-lg;
+		}
 	}
 	&.gap-2xl {
 		gap: $space-2xl;
+		@include breakpoint-md {
+		  gap: $space-xl;
+		}
 	}
 }
 .flex-grow {
@@ -109,38 +133,71 @@ html {
 }
 .flex-half {
 	flex: 0 0 50%;
+	@include breakpoint-md {
+	  flex: 0 0 100%;
+	}
 }
 .flex-third {
 	flex: 0 0 33.33333333%;
+	@include breakpoint-md {
+	  flex: 0 0 100%;
+	}
 }
 .grid {
 	display:grid;
 	&.grid-half {
 		grid-template-columns: 1fr 1fr;
+		@include breakpoint-md {
+		  grid-template-columns: 1fr;
+		}
 	}
 	&.grid-third {
 		grid-template-columns: 1fr 1fr 1fr;
+		@include breakpoint-md {
+		  grid-template-columns: 1fr;
+		}
 	}
 	&.gap-2xs {
 		grid-gap: $space-2xs;
+		@include breakpoint-md {
+		  gap: $space-3xs;
+		}
 	}
 	&.gap-xs {
 		grid-gap: $space-xs;
+		@include breakpoint-md {
+		  gap: $space-2xs;
+		}
 	}
 	&.gap-sm {
 		grid-gap: $space-sm;
+		@include breakpoint-md {
+		  gap: $space-xs;
+		}
 	}
 	&.gap-md {
 		grid-gap: $space-md;
+		@include breakpoint-md {
+		  gap: $space-sm;
+		}
 	}
 	&.gap-lg {
 		grid-gap: $space-lg;
+		@include breakpoint-md {
+		  gap: $space-md;
+		}
 	}
 	&.gap-xl {
 		grid-gap: $space-xl;
+		@include breakpoint-md {
+		  gap: $space-lg;
+		}
 	}
 	&.gap-2xl {
 		grid-gap: $space-2xl;
+		@include breakpoint-md {
+		  gap: $space-xl;
+		}
 	}
 }
 .fitted-background {
