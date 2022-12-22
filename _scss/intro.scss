@@ -1,7 +1,16 @@
-.introduction {
+.intro {
   border-radius: 0px;
   overflow:visible;
-  .introduction-content {
+  .intro-graphic-container {
+    img {
+      margin-top: -$space-2xl;
+      border-radius: $border-radius-lg;
+      @include breakpoint-md {
+        border-radius: $border-radius-md;
+      }
+    }
+  }
+  .intro-content {
     padding-top: $space-sm;
     padding-bottom: $space-2xl;
     @include breakpoint-md {

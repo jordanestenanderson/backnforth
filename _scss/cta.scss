@@ -5,8 +5,25 @@
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		padding: 0 $space-md;
-		.button-base {
+		.cta-graphic {
+			@include breakpoint-md {
+			  max-width: 400px;
+			  margin: 0 auto;
+			}
+		}
+		.cta-content {
+			@include breakpoint-md {
+			  text-align: center;
+			  max-width:600px;
+			  margin: 0 auto;
+			}
+		}
+		.button-lg {
 			margin-top:$space-2xs;
+		}
+		@include breakpoint-md {
+			grid-template-columns: 1fr;
+			padding: 0;
 		}
 	}
 }

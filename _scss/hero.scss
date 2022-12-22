@@ -1,18 +1,16 @@
-.hero-content-container {
-  padding: $space-lg 0 $space-3xl 0;
-  @include breakpoint-md {
-    padding-top: $space-md;
-  }
-  .button-lg {
-    margin-top: $space-2xs;
-  }
-}
-.hero-graphic-container {
-  img {
-    margin-top: -$space-2xl;
-    border-radius: $border-radius-lg;
+.hero {
+  .hero-content-container {
+    padding: $space-lg 0 $space-3xl 0;
     @include breakpoint-md {
-      border-radius: $border-radius-md;
+      padding-top: $space-md;
+    }
+    .button-lg {
+      margin-top: $space-2xs;
+    }
+  }
+  &.interior-header {
+    .hero-content-container {
+      padding: $space-lg 0 $space-lg 0;
     }
   }
 }

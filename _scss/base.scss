@@ -160,43 +160,43 @@ html {
 	&.gap-2xs {
 		grid-gap: $space-2xs;
 		@include breakpoint-md {
-		  gap: $space-3xs;
+		  grid-gap: $space-3xs;
 		}
 	}
 	&.gap-xs {
 		grid-gap: $space-xs;
 		@include breakpoint-md {
-		  gap: $space-2xs;
+		  grid-gap: $space-2xs;
 		}
 	}
 	&.gap-sm {
 		grid-gap: $space-sm;
 		@include breakpoint-md {
-		  gap: $space-xs;
+		  grid-gap: $space-xs;
 		}
 	}
 	&.gap-md {
 		grid-gap: $space-md;
 		@include breakpoint-md {
-		  gap: $space-sm;
+		  grid-gap: $space-sm;
 		}
 	}
 	&.gap-lg {
 		grid-gap: $space-lg;
 		@include breakpoint-md {
-		  gap: $space-md;
+		  grid-gap: $space-md;
 		}
 	}
 	&.gap-xl {
 		grid-gap: $space-xl;
 		@include breakpoint-md {
-		  gap: $space-lg;
+		  grid-gap: $space-lg;
 		}
 	}
 	&.gap-2xl {
 		grid-gap: $space-2xl;
 		@include breakpoint-md {
-		  gap: $space-xl;
+		  grid-gap: $space-xl;
 		}
 	}
 }

@@ -1,10 +1,10 @@
 a.button-lg {
   font-size: $text-lg;
-  padding: 12px $space-sm 14px $space-sm;
+  padding: 11px $space-sm 13px $space-sm;
 }
 a.button-base {
   font-size: $text-base;
-  padding: 10px $space-sm 12px $space-sm;
+  padding: 10px $space-sm 10px $space-sm;
 }
 a.button-sm {
   font-size: $text-sm;
@@ -65,6 +65,17 @@ a.button-lg, a.button-base, a.button-sm {
     &:hover {
       color: $neutral-900;
       background: $neutral-100;
+    }
+  }
+  &.blue {
+    background: $blue;
+    border: 1px solid $blue;
+    &:after {
+      display:none;
+    }
+    &:hover {
+      background: transparent;
+      border: 1px solid $neutral-100;
     }
   }
 }

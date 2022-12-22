@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  {% include email-head.html %}
+  <body style="background-color:#2C2D30;margin:0;">
+    <!--[if gte mso 9]>
+        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+            <v:fill type="tile" color="#2C2D30"></v:fill>
+        </v:background>
+    <![endif]-->
+    <table width="100%" cellspacing="0" cellpadding="0" style="max-width:600px;margin:0 auto;padding:0 24px;">
+      <tbody>
+        <tr>
+          <td valign="top">
+            {% include email-header.html %}
+            {{ content }}
+            {% include email-footer.html %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

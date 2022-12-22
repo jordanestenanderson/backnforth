@@ -16,4 +16,8 @@ header {
       }
     }
   }
+  &.simple-header {
+    position:relative;
+    border-bottom: none;
+  }
 }

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stripe Setup Walkthrough | Back n Forth</title>
+	<meta name="description" content="Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada." />
+	<meta name="keywords" content="creator, monetization, support, feedback, annotation, audience, photography, art, design, fashion, freelance, contractor" />
+	<meta name="author" content="Stripe Setup Walkthrough | Back n Forth" />
+	<meta property="og:url" content="http://gobacknforth.com/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Stripe Setup Walkthrough | Back n Forth" />
+	<meta property="og:description" content="Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada." />
+	<meta property="og:image" content="/assets/main/meta.jpg" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/assets/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#2C2D30">
+	<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#2C2D30">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+	<link rel="stylesheet" href="https://use.typekit.net/kkh0xoy.css">
+	<script>document.documentElement.className += 'js';</script>
+</head>
+  <body class="body">
+    <header class="simple-header" data-aos="fade-down">
+    <nav class="wrapper-md flex align-center justify-center flex-grow">
+    	<div class="brand flex align-center">
+            <a class="flex align-center" href="/">
+              <svg width="212" height="30" viewBox="0 0 212 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10.5347 16.0441C12.0127 16.0441 12.3272 16.6101 12.107 17.7737C11.9183 18.7485 11.258 19.346 10.063 19.346H6.38371L6.9812 16.0441H10.5347ZM11.2265 8.77988C12.7045 8.77988 13.1762 9.34592 12.9246 10.6352C12.7045 11.8617 12.0127 12.3019 10.5032 12.3019H7.64158L8.23907 8.77988H11.2265ZM0 23.4341H9.71707C14.5284 23.4341 17.0442 21.6102 17.5473 18.8114C18.1134 15.7611 17.1071 14.5032 13.585 14.1573L13.6165 13.8743C16.3524 13.3711 18.019 12.1447 18.4278 9.88052C19.0568 6.26413 17.1071 4.566 12.2643 4.566H3.33336L0 23.4341Z" fill="#FFFFFF"/>
+    <path d="M30.9717 23.4341H36.8208L34.0535 4.566H26.1918L16.7577 23.4341H22.7955L24.3679 20.0064H30.6572L30.9717 23.4341ZM27.261 13.6227C27.8899 12.2076 28.5188 10.7925 29.1163 9.40881H29.7453C29.8396 10.7925 29.9339 12.2076 30.0597 13.6227L30.2799 15.9498H26.1918L27.261 13.6227Z" fill="#FFFFFF"/>
+    <path d="M46.1315 23.9058C51.2259 23.9058 54.3391 21.3586 55.6599 16.5158L50.3454 15.4466C49.4334 17.868 48.5529 19.0944 46.3831 19.0944C43.6158 19.0944 42.861 17.1133 43.4585 13.7799C43.8988 11.2013 45.2196 9 47.8296 9C50.0938 9 50.8171 10.1635 50.7856 12.4592L56.3517 11.8302C56.3203 7.0503 53.8674 4.0943 48.3642 4.0943C42.861 4.0943 38.9302 7.36477 37.8924 13.2768C36.7289 19.8806 39.8421 23.9058 46.1315 23.9058Z" fill="#FFFFFF"/>
+    <path d="M67.5797 23.4341H73.8691L73.932 23.0882L68.7118 14.6604L77.1081 4.91192L77.171 4.566H70.4728L64.7181 12.3334H63.9319L65.3156 4.566H59.6551L56.3218 23.4341H61.9822L63.1457 16.8303H64.0891L67.5797 23.4341Z" fill="#FFFFFF"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M93.3507 3.47207C91.8465 2.3629 90.1753 2.32746 88.1894 2.7698C87.5744 2.90678 86.9648 2.51929 86.8278 1.90431C86.6909 1.28934 87.0784 0.679761 87.6933 0.542782C89.9566 0.0386617 92.4275 -0.0434617 94.7048 1.63573C95.8272 2.46335 96.4336 3.54454 96.6819 4.74028C96.7243 4.72209 96.7667 4.704 96.8093 4.68599C101.317 2.77859 104.479 1.98151 106.618 2.09492C107.713 2.153 108.657 2.45599 109.352 3.09211C110.058 3.73779 110.359 4.59065 110.429 5.44455C110.563 7.06573 109.896 9.01306 109.121 10.7456C108.322 12.5291 107.302 14.311 106.529 15.6558C106.135 16.3407 105.576 17.208 104.976 18.137C104.868 18.3045 104.759 18.474 104.649 18.6448C103.918 19.7809 103.144 21.0029 102.478 22.1868C101.807 23.3818 101.28 24.479 101.015 25.3694C100.722 26.3516 100.866 26.6798 100.904 26.7287C100.972 26.817 101.015 26.8351 101.033 26.8418C101.057 26.8506 101.135 26.8736 101.315 26.8464C101.718 26.7853 102.378 26.514 103.413 25.8524C105.457 24.546 108.456 22.0617 112.949 18.2157C113.427 17.806 114.148 17.8618 114.557 18.3405C114.967 18.8191 114.911 19.5392 114.433 19.949C109.982 23.7592 106.85 26.364 104.642 27.7749C103.551 28.4719 102.555 28.9663 101.656 29.1023C101.185 29.1736 100.7 29.153 100.235 28.9792C99.7634 28.8031 99.3906 28.4995 99.1031 28.1299C98.3166 27.1192 98.5168 25.7629 98.8285 24.7175C99.1676 23.5801 99.7938 22.3064 100.489 21.0689C101.191 19.8203 101.998 18.5482 102.73 17.4103C102.845 17.2323 102.957 17.0583 103.067 16.8884C103.669 15.9549 104.189 15.1482 104.551 14.5186C105.33 13.163 106.294 11.4765 107.038 9.81374C107.805 8.10005 108.237 6.62327 108.155 5.63257C108.118 5.18052 107.982 4.9305 107.812 4.77511C107.632 4.61016 107.263 4.4139 106.497 4.37331C104.914 4.28938 102.165 4.89727 97.6984 6.78724C97.378 6.92278 97.0624 7.06401 96.7516 7.21056C96.7007 7.63247 96.6226 8.05686 96.5226 8.47882C95.9137 11.0489 94.4322 13.9031 92.7461 16.5468C91.0481 19.2089 89.0883 21.7408 87.4469 23.6804C86.6254 24.6512 85.8781 25.4802 85.2766 26.1087C84.707 26.7039 84.1944 27.1985 83.8683 27.4231C82.8655 28.1137 81.5564 28.5287 80.4106 28.0086C79.1389 27.4314 78.7387 26.0484 78.9075 24.5847C79.002 23.7651 79.4734 22.4269 80.2199 20.8868C80.986 19.3061 82.0959 17.4026 83.5599 15.4283C86.0959 12.0085 89.7292 8.33077 94.5284 5.77412C94.4537 4.74423 94.0537 3.99047 93.3507 3.47207ZM94.118 8.63971C90.4118 10.9263 87.5122 13.9291 85.3926 16.7873C84.0151 18.6449 82.9785 20.4263 82.273 21.882C81.5478 23.3783 81.2223 24.4279 81.174 24.846C81.1172 25.3391 81.1753 25.6284 81.2343 25.7744C81.2849 25.8997 81.3334 25.9219 81.3535 25.931C81.4414 25.9709 81.8652 26.0323 82.5742 25.544C82.5751 25.5434 82.5736 25.5444 82.5747 25.5436L82.5764 25.5424L82.5826 25.5379C82.5881 25.5338 82.5955 25.5281 82.605 25.5206C82.6242 25.5055 82.6491 25.4851 82.68 25.4586C82.7423 25.4053 82.8208 25.3346 82.9157 25.245C83.1056 25.066 83.3456 24.8265 83.6282 24.5312C84.1927 23.9414 84.9088 23.1477 85.7052 22.2065C87.2997 20.3224 89.1934 17.8739 90.8224 15.3198C92.2953 13.0107 93.5086 10.6812 94.118 8.63971Z" fill="#38AAEB"/>
+    <path d="M133.582 18.2768L134.431 13.434H126.318L126.978 9.75473H135.72L136.632 4.566H122.229L118.896 23.4341H124.557L125.469 18.2768H133.582Z" fill="#FFFFFF"/>
+    <path d="M144.485 23.9058C150.271 23.9058 154.171 20.541 155.177 14.8806C156.34 8.08805 153.007 4.0943 146.844 4.0943C141.34 4.0943 137.189 7.36477 136.214 13.0566C134.988 19.8177 138.133 23.9058 144.485 23.9058ZM144.957 19.0944C142.032 19.0944 141.12 17.0818 141.749 13.6227C142.252 10.7925 143.604 9 146.403 9C149.359 9 150.208 11.0126 149.674 14.1887C149.108 17.302 147.755 19.0944 144.957 19.0944Z" fill="#FFFFFF"/>
+    <path d="M166.254 9.28303C168.047 9.28303 168.801 9.91196 168.518 11.6101C168.298 12.8994 167.606 13.4969 165.814 13.4969H163.046L163.801 9.28303H166.254ZM166.569 23.4341H173.141L173.204 23.0882L170.059 16.8932C172.198 16.0755 173.613 14.5032 174.053 11.8931C174.902 7.14464 172.355 4.566 167.386 4.566H158.896L155.625 23.4341H161.285L162.323 17.6164H164.399L166.569 23.4341Z" fill="#FFFFFF"/>
+    <path d="M175.591 9.75473H180.56L178.138 23.4341H183.799L186.22 9.75473H191.189L192.101 4.566H176.503L175.591 9.75473Z" fill="#FFFFFF"/>
+    <path d="M208.029 23.4341L211.363 4.566H205.702L204.476 11.5158H198.187L199.413 4.566H193.753L190.419 23.4341H196.08L197.306 16.5787H203.595L202.369 23.4341H208.029Z" fill="#FFFFFF"/>
+</svg>
+            </a>
+        </div>
+    </nav>
+</header>
+
+      <div id="content-container">
+        <div class="content">
+    <!-------Hero------->
+    <div class="hero interior-header" data-aos="fade-down">
+        <div class="wrapper-md">
+            <div class="hero-content-container">
+                <div class="wrapper-xs centered">
+                    <h1 class="title-5xl white">Setup Your Stripe Account</h1>
+                    <p class="body-lg light">Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------How It Works------->
+    <div class="container-lg how-it-works interior-how-it-works" data-aos="fade-down">
+        <div class="wrapper-md">
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-1 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-1.jpg" alt="One elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M38.5059 41.8V37.444H34.4379V20.2H31.5579L23.4939 22.756L25.1139 26.86C26.9139 26.212 28.2819 25.6 29.5419 24.916V37.444H24.2859V41.8H38.5059Z" fill="white"/>
+</svg>
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step One</h3>
+                    <p class="flex-grow body-lg light">One elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-2 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-2.jpg" alt="Two elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M31.6479 24.214C34.0959 24.214 35.1399 25.33 35.1399 26.95C35.1399 28.858 34.2039 29.794 28.9479 31.162C23.9079 32.458 21.7119 34.474 21.7119 39.406C21.7119 40.342 21.7119 41.17 21.7839 42.034H40.2879V37.642H32.3679C30.7119 37.642 28.1199 37.822 26.1399 38.038C26.3559 36.094 27.6159 35.374 31.4679 34.474C36.7239 33.43 40.2159 31.342 40.2159 27.13C40.2159 22.234 37.1919 19.966 31.6839 19.966C25.5639 19.966 22.9359 23.242 22.3959 28.354L27.2559 28.93C27.5799 25.834 28.9119 24.214 31.6479 24.214Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Two</h3>
+                    <p class="flex-grow body-lg light">Two elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-3 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-3.jpg" alt="Three elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M31.3061 42.16C37.6781 42.16 40.2341 39.676 40.2341 36.004C40.2341 32.98 38.8301 31.576 34.4021 31.144V30.712C37.6061 30.064 39.3701 28.552 39.3701 25.636C39.3701 21.784 36.9221 19.84 31.1981 19.84C25.5821 19.84 23.0621 22.54 22.4861 26.896L27.2741 27.328C27.5981 25.168 28.4261 23.908 31.2341 23.908C33.5381 23.908 34.5821 24.736 34.5821 26.68C34.5821 28.552 33.5021 29.236 31.5581 29.236H27.9221V32.764H31.5581C34.3661 32.764 35.1221 33.628 35.1221 35.392C35.1221 37.084 33.9341 38.128 31.3421 38.128C28.1021 38.128 27.1301 36.796 26.7701 34.6L21.7661 35.176C22.3061 40.072 25.5101 42.16 31.3061 42.16Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Three</h3>
+                    <p class="flex-grow body-lg light">Three elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-4 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-4.jpg" alt="Four elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M40.792 36.976V32.98H38.092V20.2H31.756L21.208 33.448V36.976H33.16V41.8H38.092V36.976H40.792ZM32.368 32.98C30.568 32.98 28.264 33.088 25.96 33.376L25.78 33.124L32.836 24.052L33.16 24.16V32.98H32.368Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Four</h3>
+                    <p class="flex-grow body-lg light">Four elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-5 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-5.jpg" alt="Five elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M31.2701 37.984C28.4981 37.984 27.2381 36.616 26.5901 34.888L21.7661 36.148C22.8461 40.144 25.8701 41.98 31.2341 41.98C36.9941 41.98 40.2341 39.82 40.2341 34.924C40.2341 31.036 37.9301 28.372 32.9621 28.372C30.5141 28.372 28.7501 28.912 27.4541 29.668V24.232C30.2621 24.484 34.1141 24.7 39.0461 24.7V20.02H22.9541V31.576L26.9501 33.124C28.0301 32.404 29.4701 31.864 31.3061 31.864C34.1501 31.864 35.1941 33.016 35.1941 34.888C35.1941 36.868 34.1861 37.984 31.2701 37.984Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Five</h3>
+                    <p class="flex-grow body-lg light">Five elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-6 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-6.jpg" alt="Six elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M31.468 31.7919C34.348 31.7919 35.32 32.9799 35.32 34.7439C35.32 36.5799 34.492 38.0559 31.324 38.0559C28.336 38.0559 27.076 36.6519 27.076 34.8879C27.076 33.1959 28.264 31.7919 31.468 31.7919ZM40.324 34.8519C40.324 30.4239 37.336 28.7679 33.484 28.7679C30.244 28.7679 27.976 29.8839 27.004 32.9079L26.572 32.8359V32.3679C26.572 26.4999 27.796 23.9799 31.324 23.9799C33.772 23.9799 34.528 25.1679 34.924 27.2559L39.856 26.7159C39.28 22.1439 37.336 19.7679 31.36 19.7679C24.484 19.7679 21.676 24.8439 21.676 31.1079C21.676 39.5319 25.564 42.2319 31.216 42.2319C37.3 42.2319 40.324 39.4959 40.324 34.8519Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Six</h3>
+                    <p class="flex-grow body-lg light">Six elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-7 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-7.jpg" alt="Seven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M22.054 24.808H29.29C31.522 24.808 33.862 24.628 35.842 24.412C30.766 28.768 27.49 34.708 27.13 41.8H32.89C33.214 35.176 35.41 29.524 39.946 24.808V20.2H22.054V24.808Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Seven</h3>
+                    <p class="flex-grow body-lg light">Seven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-8 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-8.jpg" alt="Eight elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M30.9999 42.2319C37.6959 42.2319 40.2879 39.7479 40.2879 36.0759C40.2879 33.3759 38.5959 31.7199 34.6719 31.1079V30.6759C37.7319 29.9559 39.4239 28.5159 39.4239 25.6359C39.4239 21.9279 36.9759 19.7679 30.9999 19.7679C25.0239 19.7679 22.6119 21.9279 22.5759 25.6359C22.5759 28.5159 24.2679 29.9919 27.3639 30.6759V31.1079C23.4039 31.7199 21.7119 33.3759 21.7119 36.0759C21.7119 39.7479 24.3399 42.2319 30.9999 42.2319ZM30.9999 32.6919C34.3119 32.6919 35.1759 33.8439 35.1759 35.4279C35.1759 37.1199 33.8799 38.1279 30.9999 38.1279C28.1559 38.1279 26.8239 37.1199 26.8239 35.4279C26.8239 33.8439 27.7239 32.6919 30.9999 32.6919ZM30.9999 23.9439C33.5199 23.9439 34.5639 24.8439 34.5639 26.6079C34.5639 28.5519 33.2679 29.3439 30.9999 29.3439C28.7319 29.3439 27.4359 28.5519 27.4359 26.6079C27.4359 24.8439 28.4799 23.9439 30.9999 23.9439Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Eight</h3>
+                    <p class="flex-grow body-lg light">Eight elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-9 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-9.jpg" alt="Nine elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M30.64 30.5679C28.012 30.5679 26.752 29.3079 26.752 27.3999C26.752 25.5279 27.724 23.9439 30.748 23.9439C33.628 23.9439 34.924 25.4199 34.924 27.2559C34.924 29.0559 33.628 30.5679 30.64 30.5679ZM30.64 42.2319C37.516 42.2319 40.324 37.1559 40.324 30.8919C40.324 22.4679 36.472 19.7679 30.676 19.7679C24.772 19.7679 21.712 22.5759 21.712 27.2919C21.712 31.8639 24.736 33.5919 28.732 33.5919C31.864 33.5919 34.024 32.2959 35.032 29.4159L35.464 29.4879C35.464 29.5959 35.464 29.6679 35.464 29.7759C35.464 35.5359 34.24 38.0199 30.748 38.0199C28.264 38.0199 27.004 37.0479 26.536 35.0679L21.676 35.9679C22.36 39.8559 24.736 42.2319 30.64 42.2319Z" fill="white"/>
+</svg>
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Nine</h3>
+                    <p class="flex-grow body-lg light">Nine elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-10 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-10.jpg" alt="Ten elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M27.8687 41.8V37.444H23.8007V20.2H20.9207L12.8567 22.756L14.4767 26.86C16.2767 26.212 17.6447 25.6 18.9047 24.916V37.444H13.6487V41.8H27.8687Z" fill="white"/>
+<path d="M39.4233 24.196C42.5553 24.196 43.9593 26.608 43.9593 30.928C43.9593 35.248 42.5553 37.876 39.3873 37.876C36.3273 37.876 34.8873 35.248 34.8873 30.928C34.8873 26.608 36.2913 24.196 39.4233 24.196ZM39.4233 19.696C33.5913 19.696 29.7393 23.584 29.7393 30.928C29.7393 38.308 33.3393 42.304 39.4233 42.304C45.5073 42.304 49.1433 38.308 49.1433 30.928C49.1433 23.584 45.3633 19.696 39.4233 19.696Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Ten</h3>
+                    <p class="flex-grow body-lg light">Ten elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-11 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-11.jpg" alt="Eleven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M30.4024 41.8V37.444H26.3344V20.2H23.4544L15.3904 22.756L17.0104 26.86C18.8104 26.212 20.1784 25.6 21.4384 24.916V37.444H16.1824V41.8H30.4024Z" fill="white"/>
+<path d="M46.6094 41.8V37.444H42.5414V20.2H39.6614L31.5974 22.756L33.2174 26.86C35.0174 26.212 36.3854 25.6 37.6454 24.916V37.444H32.3894V41.8H46.6094Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Eleven</h3>
+                    <p class="flex-grow body-lg light">Eleven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-12 step-final step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="/assets/main/stripe-12.jpg" alt="Twelve elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante." />
+                </div>
+                <div class="step-number">
+                    <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="62" height="62" rx="31" fill="#38AAEB"/>
+<path d="M28.2466 42.0341V37.6781H24.1786V20.4341H21.2986L13.2346 22.9901L14.8546 27.0941C16.6546 26.4461 18.0226 25.8341 19.2826 25.1501V37.6781H14.0266V42.0341H28.2466Z" fill="white"/>
+<path d="M40.1252 24.2141C42.5732 24.2141 43.6172 25.3301 43.6172 26.9501C43.6172 28.8581 42.6812 29.7941 37.4252 31.1621C32.3852 32.4581 30.1892 34.4741 30.1892 39.4061C30.1892 40.3421 30.1892 41.1701 30.2612 42.0341H48.7652V37.6421H40.8452C39.1892 37.6421 36.5972 37.8221 34.6172 38.0381C34.8332 36.0941 36.0932 35.3741 39.9452 34.4741C45.2012 33.4301 48.6932 31.3421 48.6932 27.1301C48.6932 22.2341 45.6692 19.9661 40.1612 19.9661C34.0412 19.9661 31.4132 23.2421 30.8732 28.3541L35.7332 28.9301C36.0572 25.8341 37.3892 24.2141 40.1252 24.2141Z" fill="white"/>
+</svg>
+
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">Step Twelve</h3>
+                    <p class="flex-grow body-lg light">Twelve elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------FOOTER------->
+    <div class="footer" data-aos="fade-down">
+        <footer class="wrapper-md flex align-center">
+    <div class="footer-container flex flex-grow align-center justify-between">
+    	<div class="footer-content">
+    		<p class="body-base align-left"><a class="inverse" href="mailto:hello@gobacknforth.com">hello@gobacknforth.com</a></p>
+    	</div>
+		<div class="flex">
+			<a class="iconlink" href="https://twitter.com/backnforthapp" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.832 10.96C23.616 10.848 24.288 10.736 24.96 10.4C24.512 11.184 23.84 11.856 23.056 12.304C23.28 17.568 19.472 23.28 12.64 23.28C10.624 23.28 8.71998 22.608 7.03998 21.6C8.94398 21.824 10.96 21.264 12.304 20.256C10.624 20.256 9.27998 19.136 8.83198 17.68C9.39198 17.792 9.95198 17.68 10.512 17.568C8.83198 17.12 7.59998 15.552 7.59998 13.872C8.15998 14.096 8.71998 14.32 9.27998 14.32C7.71198 13.2 7.15198 11.072 8.15998 9.39203C10.064 11.632 12.752 13.088 15.776 13.2C15.216 10.96 17.008 8.72003 19.36 8.72003C20.368 8.72003 21.376 9.16803 22.048 9.84003C22.944 9.61603 23.728 9.39203 24.4 8.94403C24.176 9.84003 23.616 10.512 22.832 10.96Z" fill="#8D94A2"/>
+</svg></a>
+			<a class="iconlink" href="https://www.instagram.com/backnforthapp/" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 8.38404C18.464 8.38404 18.8 8.38404 19.808 8.38404C20.704 8.38404 21.152 8.60804 21.488 8.72004C21.936 8.94404 22.272 9.05604 22.608 9.39204C22.944 9.72804 23.168 10.064 23.28 10.512C23.392 10.848 23.504 11.296 23.616 12.192C23.616 13.2 23.616 13.424 23.616 16C23.616 18.576 23.616 18.8 23.616 19.808C23.616 20.704 23.392 21.152 23.28 21.488C23.056 21.936 22.944 22.272 22.608 22.608C22.272 22.944 21.936 23.168 21.488 23.28C21.152 23.392 20.704 23.504 19.808 23.616C18.8 23.616 18.576 23.616 16 23.616C13.424 23.616 13.2 23.616 12.192 23.616C11.296 23.616 10.848 23.392 10.512 23.28C10.064 23.056 9.72798 22.944 9.39198 22.608C9.05598 22.272 8.83198 21.936 8.71998 21.488C8.60798 21.152 8.49598 20.704 8.38398 19.808C8.38398 18.8 8.38398 18.576 8.38398 16C8.38398 13.424 8.38398 13.2 8.38398 12.192C8.38398 11.296 8.60798 10.848 8.71998 10.512C8.94398 10.064 9.05598 9.72804 9.39198 9.39204C9.72798 9.05604 10.064 8.83204 10.512 8.72004C10.848 8.60804 11.296 8.49604 12.192 8.38404C13.2 8.38404 13.536 8.38404 16 8.38404ZM16 6.70404C13.424 6.70404 13.2 6.70404 12.192 6.70404C11.184 6.70404 10.512 6.92804 9.95198 7.15204C9.39198 7.37604 8.83198 7.71204 8.27198 8.27204C7.71198 8.83204 7.48798 9.28004 7.15198 9.95204C6.92798 10.512 6.81598 11.184 6.70398 12.192C6.70398 13.2 6.70398 13.536 6.70398 16C6.70398 18.576 6.70398 18.8 6.70398 19.808C6.70398 20.816 6.92798 21.488 7.15198 22.048C7.37598 22.608 7.71198 23.168 8.27198 23.728C8.83198 24.288 9.27998 24.512 9.95198 24.848C10.512 25.072 11.184 25.184 12.192 25.296C13.2 25.296 13.536 25.296 16 25.296C18.464 25.296 18.8 25.296 19.808 25.296C20.816 25.296 21.488 25.072 22.048 24.848C22.608 24.624 23.168 24.288 23.728 23.728C24.288 23.168 24.512 22.72 24.848 22.048C25.072 21.488 25.184 20.816 25.296 19.808C25.296 18.8 25.296 18.464 25.296 16C25.296 13.536 25.296 13.2 25.296 12.192C25.296 11.184 25.072 10.512 24.848 9.95204C24.624 9.39204 24.288 8.83204 23.728 8.27204C23.168 7.71204 22.72 7.48804 22.048 7.15204C21.488 6.92804 20.816 6.81604 19.808 6.70404C18.8 6.70404 18.576 6.70404 16 6.70404Z" fill="#8D94A2"/>
+    <path d="M16 11.184C13.312 11.184 11.184 13.312 11.184 16C11.184 18.688 13.312 20.816 16 20.816C18.688 20.816 20.816 18.688 20.816 16C20.816 13.312 18.688 11.184 16 11.184ZM16 19.136C14.32 19.136 12.864 17.792 12.864 16C12.864 14.32 14.208 12.864 16 12.864C17.68 12.864 19.136 14.208 19.136 16C19.136 17.68 17.68 19.136 16 19.136Z" fill="#8D94A2"/>
+    <path d="M20.928 12.192C21.5465 12.192 22.048 11.6906 22.048 11.072C22.048 10.4535 21.5465 9.95204 20.928 9.95204C20.3094 9.95204 19.808 10.4535 19.808 11.072C19.808 11.6906 20.3094 12.192 20.928 12.192Z" fill="#8D94A2"/>
+</svg></a>
+    		<a class="iconlink" href="https://www.tiktok.com/@backnforthapp" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4923 7.03998C19.4923 7.30626 19.5172 7.56851 19.563 7.82231C19.7834 8.99557 20.4777 10.0024 21.4422 10.6306C22.1157 11.0717 22.9138 11.3255 23.7744 11.3255L23.7742 12.012V14.4043C22.1778 14.4043 20.6979 13.8926 19.4923 13.0271V19.289C19.4923 22.4136 16.9481 24.96 13.8261 24.96C12.6205 24.96 11.498 24.5771 10.5793 23.9322C9.11602 22.9045 8.15991 21.207 8.15991 19.289C8.15991 16.1601 10.6999 13.618 13.8219 13.6221C14.0839 13.6221 14.3374 13.6429 14.5869 13.6763V14.4043L14.5778 14.4087L14.5869 14.4085V16.8217C14.3458 16.7468 14.088 16.701 13.8219 16.701C12.396 16.701 11.2362 17.8619 11.2362 19.289C11.2362 20.2834 11.8016 21.1446 12.6247 21.5815C12.6324 21.592 12.6402 21.6025 12.648 21.6129L12.6618 21.6311C12.6523 21.6128 12.6414 21.5949 12.6289 21.5773C12.9905 21.7687 13.3979 21.8769 13.8303 21.8769C15.2229 21.8769 16.362 20.766 16.4118 19.3847L16.416 7.03998H19.4923Z" fill="#8D94A2"/>
+</svg></a>
+    		<a class="iconlink" href="https://www.facebook.com/backnforthapp/" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.9846 26V15.9988H20.6472L21 12.5524H17.9846L17.9891 10.8274C17.9891 9.92849 18.0715 9.44685 19.3166 9.44685H20.9812V6H18.3182C15.1196 6 13.9938 7.6719 13.9938 10.4835V12.5528H12V15.9992H13.9938V26H17.9846Z" fill="#8D94A2"/>
+</svg></a>
+    		<a class="iconlink" href="https://www.linkedin.com/company/backnforthapp/" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26404 12.976V24.96H11.072V12.976H7.26404ZM7.04004 9.16798C7.04004 10.4 7.93604 11.296 9.16804 11.296C10.4 11.296 11.296 10.4 11.296 9.16798C11.296 7.93598 10.4 7.03998 9.16804 7.03998C8.04804 7.03998 7.04004 7.93598 7.04004 9.16798ZM21.152 24.96H24.736V17.568C24.736 13.872 22.496 12.64 20.368 12.64C18.464 12.64 17.12 13.872 16.784 14.656V12.976H13.2V24.96H17.008V18.576C17.008 16.896 18.128 16 19.248 16C20.368 16 21.152 16.56 21.152 18.464V24.96Z" fill="#8D94A2"/>
+</svg></a>
+    		<a class="iconlink" href="https://www.youtube.com/@backnforthapp" target="_blank"><svg class="hoverable" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24.512 11.632C24.288 10.848 23.728 10.288 22.944 10.064C21.6 9.72803 15.8879 9.72803 15.8879 9.72803C15.8879 9.72803 10.288 9.72803 8.83195 10.064C8.04795 10.288 7.48794 10.848 7.26394 11.632C7.03994 13.088 7.03995 16 7.03995 16C7.03995 16 7.03995 18.912 7.37595 20.368C7.59995 21.152 8.15994 21.712 8.94394 21.936C10.2879 22.272 15.9999 22.272 15.9999 22.272C15.9999 22.272 21.5999 22.272 23.0559 21.936C23.8399 21.712 24.4 21.152 24.624 20.368C24.96 18.912 24.9599 16 24.9599 16C24.9599 16 24.96 13.088 24.512 11.632ZM14.2079 18.688V13.312L18.912 16L14.2079 18.688Z" fill="#8D94A2"/>
+</svg></a>
+		</div>
+    	<div class="footer-content">
+			<p class="body-base align-right">All Rights Reserved &copy; <span id="year"></span></p>
+    	</div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="/js/base.js" type="text/javascript"></script>
+    </div>
+</div>
+      </div>
+  </body>
+</html>

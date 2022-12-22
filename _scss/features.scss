@@ -1,24 +1,33 @@
 .features {
+	h2 {
+		justify-content: center;
+		margin-bottom: $space-lg;
+	}
 	.fitted-background {
 		border-radius: 0px;
-		margin-bottom:0;
-		.container-lg {
-			margin-bottom: $space-4xl;
-		}
 	}
 	.grid {
-		margin-top: -$space-4xl;
 		.feature-card {
-			margin-top:$space-lg;
-			background:#fff;
+			background: $neutral-900;
 			border-radius: $border-radius-md;
-			position:relative;
-			z-index:1;
+			position: relative;
+			z-index: 1;
+			box-shadow: $shadow-lg;
 			h3 {
-				background: $purple;
+				margin: 0px;
+				padding: $space-sm $space-sm 0 $space-sm;
+				border-radius: $border-radius-md $border-radius-md 0 0;
 			}
-			.list-icon, p {
-			  margin-top:$space-2xs;
+			.feature-list {
+				padding: $space-xs $space-sm $space-sm $space-sm;
+				.list-icon {
+					svg path {
+						stroke: $blue;
+					}
+				}
+				.list-icon, p {
+				  margin-top: $space-2xs;
+				}
 			}
 		}
 	}

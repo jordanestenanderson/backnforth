@@ -1,0 +1,247 @@
+---
+layout: stripe-setup
+metatitle: Stripe Setup Walkthrough | Back n Forth
+metadescription: Esten.co creates unique and impactful digital experiences as an independent contractor based in Canada.
+metaimg: meta.jpg
+
+herotitle: Setup Your Stripe Account
+herodescription: Donec ac velit nunc. Aliquam id felis quis lorem consequat consequat non id tortor proin in elit malesuada.
+
+steponegraphic: stripe-1.jpg
+steponegraphicalt: One elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steponetitle: Step One
+steponedescription: One elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+steptwographic: stripe-2.jpg
+steptwographicalt: Two elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steptwotitle: Step Two
+steptwodescription: Two elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepthreegraphic: stripe-3.jpg
+stepthreegraphicalt: Three elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepthreetitle: Step Three
+stepthreedescription: Three elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepfourgraphic: stripe-4.jpg
+stepfourgraphicalt: Four elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepfourtitle: Step Four
+stepfourdescription: Four elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepfivegraphic: stripe-5.jpg
+stepfivegraphicalt: Five elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepfivetitle: Step Five
+stepfivedescription: Five elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepsixgraphic: stripe-6.jpg
+stepsixgraphicalt: Six elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepsixtitle: Step Six
+stepsixdescription: Six elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepsevengraphic: stripe-7.jpg
+stepsevengraphicalt: Seven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepseventitle: Step Seven
+stepsevendescription: Seven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepeightgraphic: stripe-8.jpg
+stepeightgraphicalt: Eight elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepeighttitle: Step Eight
+stepeightdescription: Eight elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepninegraphic: stripe-9.jpg
+stepninegraphicalt: Nine elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepninetitle: Step Nine
+stepninedescription: Nine elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+steptengraphic: stripe-10.jpg
+steptengraphicalt: Ten elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steptentitle: Step Ten
+steptendescription: Ten elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+stepelevengraphic: stripe-11.jpg
+stepelevengraphicalt: Eleven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+stepeleventitle: Step Eleven
+stepelevendescription: Eleven elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+
+steptwelvegraphic: stripe-12.jpg
+steptwelvegraphicalt: Twelve elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+steptwelvetitle: Step Twelve
+steptwelvedescription: Twelve elit tortor, ipsum set ament mattis sed ultricies eu, porttitor vel felis, duis vitae luctus ante.
+---
+<div class="content">
+    <!-------Hero------->
+    <div class="hero interior-header" data-aos="fade-down">
+        <div class="wrapper-md">
+            <div class="hero-content-container">
+                <div class="wrapper-xs centered">
+                    <h1 class="title-5xl white">{{ page.herotitle }}</h1>
+                    <p class="body-lg light">{{ page.herodescription }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------How It Works------->
+    <div class="container-lg how-it-works interior-how-it-works" data-aos="fade-down">
+        <div class="wrapper-md">
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-1 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steponegraphic }}" alt="{{ page.steponegraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step1.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.steponetitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.steponedescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-2 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steptwographic }}" alt="{{ page.steptwographicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step2.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.steptwotitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.steptwodescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-3 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepthreegraphic }}" alt="{{ page.stepthreegraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step3.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepthreetitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepthreedescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-4 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepfourgraphic }}" alt="{{ page.stepfourgraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step4.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepfourtitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepfourdescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-5 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepfivegraphic }}" alt="{{ page.stepfivegraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step5.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepfivetitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepfivedescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-6 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepsixgraphic }}" alt="{{ page.stepsixgraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step6.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepsixtitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepsixdescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-7 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepsevengraphic }}" alt="{{ page.stepsevengraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step7.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepseventitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepsevendescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-8 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepeightgraphic }}" alt="{{ page.stepeightgraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step8.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepeighttitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepeightdescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-9 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepninegraphic }}" alt="{{ page.stepninegraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step9.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepninetitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepninedescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-10 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steptengraphic }}" alt="{{ page.steptengraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step10.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.steptentitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.steptendescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-11 step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.stepelevengraphic }}" alt="{{ page.stepelevengraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step11.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.stepeleventitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.stepelevendescription }}</p>
+                </div>
+            </div>
+            <div class="step-divider"></div>
+            <div class="grid gap-lg step-12 step-final step-row">
+                <div class="step-graphic">
+                    <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.steptwelvegraphic }}" alt="{{ page.steptwelvegraphicalt }}" />
+                </div>
+                <div class="step-number">
+                    {% include step12.html %}
+                </div>
+                <div class="step-content">
+                    <h3 class="title-2xl white">{{ page.steptwelvetitle }}</h3>
+                    <p class="flex-grow body-lg light">{{ page.steptwelvedescription }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------FOOTER------->
+    <div class="footer" data-aos="fade-down">
+        {% include footer.html %}
+    </div>
+</div>
