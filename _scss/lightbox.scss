@@ -1,0 +1,84 @@
+.lightbox {
+	pointer-events:none;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index:2;
+	&.open {
+		pointer-events:all;
+	}
+	.overlay {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		opacity: $opacity-0;
+		background: rgba(44,45,48,0.8);
+		-webkit-transition: all 350ms ease-out;
+		-moz-transition: all 350ms ease-out;
+		-o-transition: all 350ms ease-out;
+		transition: all 350ms ease-out;
+		&.open {
+			opacity: $opacity-100;
+		}
+	}
+	.lightbox-container {
+		position:relative;
+		z-index: 3;
+		.lightbox-scroller {
+			width:100vw;
+			height: 100vh;
+			margin: 0 auto;
+			overflow-y: scroll;
+			cursor: pointer;
+			padding: $space-md;
+			@include breakpoint-md {
+			  padding: $space-sm;
+			}
+			.lightbox-content {
+				margin-top: auto;
+				opacity: $opacity-0;
+				padding-top:32px;
+				-webkit-transition: all 350ms ease-out;
+				-moz-transition: all 350ms ease-out;
+				-o-transition: all 350ms ease-out;
+				transition: all 350ms ease-out;
+				&.open {
+					padding-top:0px;
+					opacity: $opacity-100;
+				}
+				.lightbox-close {
+					position: relative;
+					max-width: 600px;
+					width: 100%;
+					margin: 0 auto;
+					cursor: pointer;
+					padding-bottom: $space-md;
+					@include breakpoint-md {
+					  padding-bottom: $space-sm;
+					}
+				}
+				.lightbox-step {
+					position: relative;
+					max-width: 600px;
+					width: 100%;
+					height:0px;
+					margin: 0 auto;
+					overflow: hidden;
+					cursor: default;
+					-webkit-transition: all 350ms ease-out;
+					-moz-transition: all 350ms ease-out;
+					-o-transition: all 350ms ease-out;
+					transition: all 350ms ease-out;
+					.lightbox-img {
+						border-radius: $border-radius-lg;
+					}
+					&.open {
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}

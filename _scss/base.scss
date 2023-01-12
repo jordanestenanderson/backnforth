@@ -1,6 +1,9 @@
 * {
 	box-sizing:border-box;
 }
+body.open {
+	overflow-y: hidden;
+}
 html {
     background:$neutral-900;
 }
@@ -68,7 +71,7 @@ html {
 .flex {
 	display:flex;
 	&.flex-column {
-		flex-direction: columns;
+		flex-direction: column;
 	}
 	&.align-start {
 		align-items: start;
@@ -84,6 +87,9 @@ html {
 	}
 	&.justify-between {
 		justify-content: space-between;
+	}
+	&.justify-end {
+		justify-content: end;
 	}
 	&.gap-2xs {
 		gap: $space-2xs;
