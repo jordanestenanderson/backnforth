@@ -17,7 +17,7 @@ introbackground: grey-background.jpg
 introbackgroundalt: Bright purple gradient background
 
 marqueecontentone: Artists
-marqueecontenttwo: Influencers
+marqueecontenttwo: Illustrators
 marqueecontentthree: Creators
 marqueecontentfour: Photographers
 marqueecontentfive: Marketers
@@ -83,35 +83,37 @@ ctabackgroundalt: Bright purple gradient background
 ---
 <div class="content">
     <!-------Hero------->
-    <div class="hero" data-aos="fade-down">
-        <div class="wrapper-md centered">
-            <div class="hero-content-container">
-                <h1 class="title-5xl white">{{ page.herotitle }}</h1>
-                <p class="body-lg light">{{ page.herodescription }}</p>
-                <a class="button-lg" href="{{ page.heroactionlink }}"><span>{{ page.heroactiontext }}</span></a>
+    <div data-aos="fade-down">
+        <div class="hero">
+            <div class="wrapper-md centered">
+                <div class="hero-content-container">
+                    <h1 class="title-5xl white">{{ page.herotitle }}</h1>
+                    <p class="body-lg light">{{ page.herodescription }}</p>
+                    <a class="button-lg" href="{{ page.heroactionlink }}"><span>{{ page.heroactiontext }}</span></a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-------Introduction------->
-    <div class="fitted-background intro" data-aos="fade-down">
-        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.introbackground }}" alt="{{ page.introbackgroundalt }}" />
-        <div class="wrapper-sm intro-graphic-container centered index">
-            <img src="{{ site.baseurl }}/assets/main/{{ page.introimg }}" alt="{{ page.introimgalt }}" />
-        </div>
-        <div class="wrapper-sm grid grid-half gap-md index intro-content">
-            <h2 class="title-3xl white">{{ page.introtitle }}</h2>
-            <p class="body-lg light">{{ page.introdescription }}</p>
-        </div>
-        <div class="marquee-container index">
-            <!-- <div class="wrapper-sm centered">
-                <h3 class="overline-sm">{{ page.marqueetitle }}</h3>
-            </div> -->
-            <div class="marquee">
-              <div class="marquee-track">
-                <div class="marquee-content">
-                    <span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span>
+        <!-------Introduction------->
+        <div class="fitted-background intro">
+            <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.introbackground }}" alt="{{ page.introbackgroundalt }}" />
+            <div class="wrapper-sm intro-graphic-container centered index">
+                <img src="{{ site.baseurl }}/assets/main/{{ page.introimg }}" alt="{{ page.introimgalt }}" />
+            </div>
+            <div class="wrapper-sm grid grid-half gap-md index intro-content">
+                <h2 class="title-3xl white">{{ page.introtitle }}</h2>
+                <p class="body-lg light">{{ page.introdescription }}</p>
+            </div>
+            <div class="marquee-container index">
+                <!-- <div class="wrapper-sm centered">
+                    <h3 class="overline-sm">{{ page.marqueetitle }}</h3>
+                </div> -->
+                <div class="marquee">
+                  <div class="marquee-track">
+                    <div class="marquee-content">
+                        <span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
         </div>
     </div>
