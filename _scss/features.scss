@@ -1,34 +1,53 @@
 .features {
 	h2 {
 		justify-content: center;
-		margin-bottom: $space-lg;
+		margin-bottom: $space-xl;
 	}
 	.fitted-background {
 		border-radius: 0px;
 	}
 	.grid {
 		.feature-card {
-			background: $neutral-900;
+			.feature-icon {
+				margin-top: -40px;
+				svg {
+					margin: 0 auto;
+					display: block;
+					width: $space-xl;
+					height: $space-xl;
+				}
+			}
+			background: $neutral-100;
 			border-radius: $border-radius-md;
 			position: relative;
 			z-index: 1;
 			box-shadow: $shadow-lg;
 			h3 {
 				margin: 0px;
-				padding: $space-sm $space-sm 0 $space-sm;
+				padding: $space-xs $space-sm 0 $space-sm;
 				border-radius: $border-radius-md $border-radius-md 0 0;
+				text-align: center;
 			}
 			.feature-list {
 				padding: $space-xs $space-sm $space-sm $space-sm;
+				text-align: center;
 				.list-icon {
 					svg path {
 						stroke: $blue;
 					}
 				}
 				.list-icon, p {
-				  margin-top: $space-2xs;
+				  margin-top: $space-3xs;
 				}
 			}
+			@include breakpoint-md {
+				width:100%;
+			  	max-width:400px;
+			  	margin:0 auto;
+			}
+		}
+		@include breakpoint-md {
+		  grid-gap: 64px;
 		}
 	}
 }
