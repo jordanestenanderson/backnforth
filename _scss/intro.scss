@@ -63,6 +63,25 @@
         }
       }
     }
+    @include breakpoint-md {
+      padding: 0 0 $space-md 0;
+      .marquee {
+        height: 140px;
+      }
+      .marquee-track {
+        line-height:80px;
+        .marquee-content {
+          font-size: 80px;
+          span {
+            &:before {
+              width: 20px;
+              height:20px;
+              margin: 12px 16px;
+            }
+          }
+        }
+      }
+    }
     @keyframes marquee {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }

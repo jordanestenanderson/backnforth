@@ -9,6 +9,7 @@ footer {
       height: 32px;
     }
     @include breakpoint-md {
+      padding: $space-sm 0;
       flex-direction: column;
       .footer-content {
         width: 100%;

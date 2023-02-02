@@ -15,16 +15,19 @@
 			}
 			.mobile-cta {
 				display:none;
+				width:480px;
+				position: absolute;
 				@include breakpoint-md {
 				  display:block;
 				}
 			}
 			@include breakpoint-md {
+			  height:240px;
 			  padding:0;
 			}
 		}
 		.cta-content {
-			padding: $space-3xl 0;
+			padding: $space-2xl 0;
 			h2, p {
 				max-width: 500px;
 			}
@@ -37,6 +40,9 @@
 		}
 		.button-lg {
 			margin-top:$space-2xs;
+		}
+		.action-tagline {
+		  padding-top: $space-2xs;
 		}
 		@include breakpoint-md {
 			grid-template-columns: 1fr;

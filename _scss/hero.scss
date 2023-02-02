@@ -8,11 +8,17 @@
        margin-left: auto;
        margin-right: auto;
     }
-    @include breakpoint-md {
-      padding-top: $space-md;
-    }
     .button-lg {
       margin-top: $space-2xs;
+    }
+    .action-tagline {
+      padding-top: $space-2xs;
+    }
+    @include breakpoint-md {
+      padding-top: $space-md;
+      h1 {
+        font-size: $text-4xl;
+      }
     }
   }
   &.interior-header {

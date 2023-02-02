@@ -78,4 +78,20 @@ a.button-lg, a.button-base, a.button-sm {
       border: 1px solid $neutral-100;
     }
   }
+  &.ghost {
+    background: transparent;
+    padding-left: $space-2xs;
+    padding-right: $space-2xs;
+    &:after {
+      display:none;
+    }
+    &:hover {
+      background: transparent;
+      color: $blue;
+    }
+    @include breakpoint-sm {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
 }

@@ -16,6 +16,9 @@
       border-top: none;
       margin-top: 0px;
     }
+    p {
+      margin-top: $space-2xs;
+    }
     @include breakpoint-md {
       grid-template-columns: 1fr;
       grid-gap: $space-3xs;
