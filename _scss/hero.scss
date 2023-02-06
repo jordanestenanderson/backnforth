@@ -2,22 +2,89 @@
   .hero-content-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: $space-lg 0 $space-3xl 0;
-    p {
-       max-width:600px;
-       margin-left: auto;
-       margin-right: auto;
+    padding: $space-xl 0 192px 0;
+    h1 {
+      font-size: 4.25rem;
+      span {
+        position: relative;
+        .hero-text {
+          position: relative;
+          z-index:1;
+        }
+        .title-star {
+          position: absolute;
+          top: -6px;
+          left: 56px;
+          width:28px;
+          height: auto;
+          @include breakpoint-md {
+            top: 3px;
+            left: 50px;
+            width:20px;
+          }
+          @include breakpoint-sm {
+            top: 0px;
+            left: 34px;
+            width:14px;
+          }
+        }
+        .title-tagline {
+          position: absolute;
+          top: 112px;
+          left: 48px;
+          width: 118px;
+          height: auto;
+          @include breakpoint-md {
+            top: 96px;
+            left: 38px;
+            width: 100px;
+          }
+          @include breakpoint-sm {
+            top: 82px;
+            left: -2px;
+            width: 76px;
+          }
+        }
+        .title-underline {
+          position: absolute;
+          bottom: -20px;
+          right: 16px;
+          width:256px;
+          height: auto;
+          @include breakpoint-md {
+            right: 8px;
+            width:220px;
+          }
+          @include breakpoint-sm {
+            bottom: -18px;
+            right: 6px;
+            width:160px;
+          }
+        }
+      }
     }
     .button-lg {
-      margin-top: $space-2xs;
+      margin-top: 56px;
+      @include breakpoint-md {
+        margin-top: 40px;
+      }
+      @include breakpoint-sm {
+        margin-top: 32px;
+      }
     }
     .action-tagline {
-      padding-top: $space-2xs;
+      font-size: 15px;
     }
     @include breakpoint-md {
       padding-top: $space-md;
+      padding: $space-md 0 $space-3xl 0;
       h1 {
-        font-size: $text-4xl;
+        font-size: 4rem;
+      }
+    }
+    @include breakpoint-sm {
+      h1 {
+        font-size: 2.9rem;
       }
     }
   }

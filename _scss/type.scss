@@ -4,6 +4,9 @@ html {
   font-weight: $font-base;
   font-size: 16px;
   line-height: $leading-base;
+  @include breakpoint-md {
+    font-size:15px;
+  }
   @include breakpoint-sm {
     font-size:14px;
   }
@@ -50,6 +53,12 @@ a {
   font-size: $text-3xl;
   line-height: $leading-sm;
   letter-spacing: $tracking-base;
+  @include breakpoint-md {
+    font-size:2.25rem;
+  }
+  @include breakpoint-sm {
+    font-size:2.15rem;
+  }
 }
 .title-2xl {
   font-family: $family-display;
@@ -57,6 +66,12 @@ a {
   font-size: $text-2xl;
   line-height: $leading-sm;
   letter-spacing: $tracking-base;
+  @include breakpoint-md {
+    font-size:1.8rem;
+  }
+  @include breakpoint-sm {
+    font-size:1.75rem;
+  }
 }
 .title-xl {
   font-family: $family-display;
@@ -172,13 +187,6 @@ a {
     &:hover {
       color: $neutral-700;
     }
-    &.inverse {
-      color: $neutral-700;
-      text-decoration: none;
-      &:hover {
-        color: $blue;
-      }
-    }
   }
   &.light, .light {
     color: $neutral-400;
@@ -189,6 +197,10 @@ a {
         color: $neutral-400;
       }
     }
+    strong {
+      color: $neutral-100;
+      font-weight: $font-bold;
+    }
   }
   &.white, .white {
     color: $neutral-100;
@@ -198,6 +210,19 @@ a {
       &:hover {
         color: $neutral-100;
       }
+    }
+    strong {
+      color: $neutral-100;
+      font-weight: $font-bold;
+    }
+  }
+}
+a {
+  &.inverse {
+    color: $neutral-600;
+    text-decoration: none;
+    &:hover {
+      color: $blue;
     }
   }
 }

@@ -8,7 +8,7 @@
 		.cta-graphic {
 			.desktop-cta {
 				position:absolute;
-				max-width: 480px;
+				max-width: 460px;
 				@include breakpoint-md {
 				  display:none;
 				}
@@ -28,8 +28,11 @@
 		}
 		.cta-content {
 			padding: $space-2xl 0;
-			h2, p {
+			h2, .body-lg {
 				max-width: 500px;
+			}
+			.body-lg {
+				margin: $space-sm 0;
 			}
 			@include breakpoint-md {
 			  text-align: center;
@@ -42,7 +45,7 @@
 			margin-top:$space-2xs;
 		}
 		.action-tagline {
-		  padding-top: $space-2xs;
+		  font-size: 15px;
 		}
 		@include breakpoint-md {
 			grid-template-columns: 1fr;

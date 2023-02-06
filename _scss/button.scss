@@ -10,7 +10,7 @@ a.button-sm {
   font-size: $text-sm;
   padding: 8px $space-xs 10px $space-xs;
 }
-a.button-lg, a.button-base, a.button-sm {
+a.button-lg, a.button-base, a.button-sm, .newsletter-button-wrap {
   position:relative;
   font-family: $family-base;
   font-weight: $font-bold;

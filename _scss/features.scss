@@ -29,15 +29,10 @@
 				text-align: center;
 			}
 			.feature-list {
-				padding: $space-xs $space-sm $space-sm $space-sm;
+				padding: 0 $space-sm $space-sm $space-sm;
 				text-align: center;
-				.list-icon {
-					svg path {
-						stroke: $blue;
-					}
-				}
-				.list-icon, p {
-				  margin-top: $space-3xs;
+				p {
+					margin-top: $space-sm;
 				}
 			}
 			@include breakpoint-md {
