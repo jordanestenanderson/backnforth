@@ -150,6 +150,12 @@ a {
     color: $purple;
   }
 }
+.legal-title {
+  margin-top:48px;
+}
+.richtext li {
+  margin-top:8px;
+}
 .body-lg {
   font-size: $text-lg;
 }
@@ -194,7 +200,7 @@ a {
       color: $blue;
       text-decoration: underline;
       &:hover {
-        color: $neutral-400;
+        color: $neutral-100;
       }
     }
     strong {
