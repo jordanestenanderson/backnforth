@@ -2,11 +2,16 @@
   border-radius: 0px;
   overflow:visible;
   .intro-graphic-container {
-    img {
-      margin-top: -$space-2xl;
-      border-radius: $border-radius-lg;
-      @include breakpoint-md {
+    .media-wrapper {
+      img, video {
+        margin-top: -$space-2xl;
         border-radius: $border-radius-md;
+        overflow:hidden;
+      }
+      video {
+        width:100% !important;
+        height:auto !important;
+        clip-path: inset(1px 1px);
       }
     }
   }
