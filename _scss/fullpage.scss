@@ -1,0 +1,38 @@
+.full-page {
+	height: calc(100vh - 81px);
+	.hero-content-container {
+	  h1 {
+	    font-size: 3rem;
+	  }
+	  p.emoji {
+	    font-size: 3.75rem;
+	    margin-top: 0px;
+	    margin-bottom: $space-xs;
+	  }
+	  .button-lg {
+	    margin-top: $space-sm;
+	    @include breakpoint-md {
+	      margin-top: $space-xs;
+	    }
+	    @include breakpoint-sm {
+	      margin-top: $space-xs;
+	    }
+	  }
+	  @include breakpoint-md {
+	  	h1 {
+	  	  font-size: 2.5rem;
+	  	}
+	    p.emoji {
+	      font-size: 3.5rem;
+	    }
+	  }
+	  @include breakpoint-sm {
+	  	h1 {
+	  	  font-size: 2.25rem;
+	  	}
+	  }
+	}
+	@include breakpoint-sm {
+	  height: calc(100vh - 61px);
+	}
+}
