@@ -16,7 +16,7 @@
     flex-shrink: 0;
     background: #212225;
     @include breakpoint-md {
-      position: sticky;
+      position: fixed;
       top: 0;
     }
   }
