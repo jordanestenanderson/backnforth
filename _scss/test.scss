@@ -32,13 +32,14 @@
     }
     .canvas-container {
       width:100%;
+      position:relative;
+      overflow:hidden;
       @include breakpoint-md {
         pointer-events: none;
         opacity: 0;
         position: fixed;
         top: 0;
         width:100%;
-        height: 100vh;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -58,37 +59,37 @@
         width:100%;
         height: 100%;
         background:blue;
-        position:relative;
-        overflow:hidden;
-        .canvas-controls {
-          position: absolute;
-          left:0;
-          bottom:0;
-          right: 0;
-          margin-left: auto;
-          margin-right: auto;
+        @include breakpoint-md {
+          height: calc(100vh - 136px);
+        }
+      }
+      .canvas-controls {
+        position: absolute;
+        left:0;
+        bottom:0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 500px;
+        height: 80px;
+        background: purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 24px;
+        @include breakpoint-md {
+          position: sticky;
+          max-width: 100%;
+        }
+        .mobile-input {
+          display:none;
           width: 100%;
-          max-width: 500px;
-          height: 80px;
-          background: purple;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 8px 24px;
-          @include breakpoint-md {
-            position: sticky;
-            bottom:0;
-            max-width: 100%;
-          }
-          .mobile-input {
-            display:none;
+          textarea {
             width: 100%;
-            textarea {
-              width: 100%;
-            }
-            @include breakpoint-md {
-              display: block;
-            }
+          }
+          @include breakpoint-md {
+            display: block;
           }
         }
       }
