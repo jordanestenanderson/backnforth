@@ -72,7 +72,7 @@
             <div class="canvas"></div>
             <div class="canvas-controls">
                 <form class="mobile-input">
-                    <textarea name="comment" rows="2" placeholder="Write a message..."></textarea>
+                    <textarea id="mobile-input" name="comment" rows="2" placeholder="Write a message..."></textarea>
                 </form>
             </div>
         </div>
@@ -127,11 +127,7 @@
       document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
 
-    $(document).ready(function() {
-         document.ontouchmove = function(e){
-              e.preventDefault();
-              }
-     });
+    let input = document.getElementById('mobile-input')
 
     input.onfocus = function () {
         window.scrollTo(0, 0);
