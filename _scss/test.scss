@@ -1,0 +1,138 @@
+.body.open {
+  overflow-y: hidden;
+}
+.creator-layout {
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  @include breakpoint-md {
+    height: auto;
+  }
+  .topbar {
+    height:56px;
+    padding: 0 16px;
+    display:flex;
+    align-items:center;
+    width:100%;
+    justify-content:space-between;
+    flex-shrink: 0;
+    background: #212225;
+    @include breakpoint-md {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .creator-content {
+    display:flex;
+    overflow-y: scroll;
+    flex-grow: 1;
+    @include breakpoint-md {
+      overflow-y: visible;
+    }
+    .canvas-container {
+      width:100%;
+      @include breakpoint-md {
+        pointer-events: none;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width:100%;
+        height: 100vh;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      &.open {
+        pointer-events: all;
+        opacity: 1;
+      }
+      .modal-topbar {
+        display:none;
+        z-index: 2;
+        @include breakpoint-md {
+          display: flex;
+        }
+      }
+      .canvas {
+        width:100%;
+        height: 100%;
+        background:blue;
+        position:relative;
+        overflow:hidden;
+        .canvas-controls {
+          position: absolute;
+          left:0;
+          bottom:0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 500px;
+          height: 80px;
+          background: purple;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 8px 24px;
+          @include breakpoint-md {
+            max-width: 100%;
+          }
+          .mobile-input {
+            display:none;
+            width: 100%;
+            textarea {
+              width: 100%;
+            }
+            @include breakpoint-md {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .comments {
+      background: black;
+      width:100%;
+      max-width: 500px;
+      overflow-y: scroll;
+      height: 100%;
+      padding: 16px 32px;
+      h1 {
+       display:none;
+       @include breakpoint-md {
+         display: block;
+         text-align: center;
+       }
+      }
+      img {
+        display:none;
+        @include breakpoint-md {
+          display: block;
+          padding: 16px 0;
+        }
+      }
+      @include breakpoint-md {
+        max-width: 100%;
+        overflow: visible;
+      }
+    }
+    .mobile-trigger {
+      cursor: pointer;
+      display: none;
+      width: 62px;
+      height: 62px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 80px;
+      flex-shrink: 0;
+      background: green;
+      @include breakpoint-md {
+        display: flex;
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+      }
+    }
+  }
+}
