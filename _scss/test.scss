@@ -37,8 +37,10 @@
         position: fixed;
         top: 0;
         width:100%;
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
+        height: 100vh;
+        height: -webkit-fill-available;
+        height: -moz-available;
+        height: fill-available;
         z-index: 1;
         display: flex;
         flex-direction: column;
