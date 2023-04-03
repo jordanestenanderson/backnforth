@@ -77,12 +77,16 @@ metaimg: meta.jpg
       document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
 
+     $(document).ready(function() {
+         document.ontouchmove = function(e){
+              e.preventDefault();
+              }
+     });
+
     let input = document.getElementById('mobile-input')
 
     input.onfocus = function () {
         window.scrollTo(0, 0);
         document.body.scrollTop = 0;
     }
-
-    console.log(input);
 </script>
