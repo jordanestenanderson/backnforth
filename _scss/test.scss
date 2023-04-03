@@ -1,4 +1,4 @@
-.body.open {
+body.open {
   overflow-y: hidden;
 }
 .creator-layout {
@@ -40,6 +40,8 @@
         position: fixed;
         top: 0;
         width:100%;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -60,7 +62,7 @@
         height: 100%;
         background:blue;
         @include breakpoint-md {
-          height: calc(100vh - 136px);
+          flex-grow: 1;
         }
       }
       .canvas-controls {
@@ -81,6 +83,7 @@
         @include breakpoint-md {
           position: sticky;
           max-width: 100%;
+          flex-shrink: 0;
         }
         .mobile-input {
           display:none;
