@@ -58,14 +58,14 @@
       <div id="content-container">
         <div class="creator-layout">
     <div class="topbar creator-topbar">
-        <div class="button-wrap"><a class="arrow-link" href="#">Go Back</a></div>
+        <div class="button-wrap"><button class='arrow-link'>Go Back</button></div>
         <h4 class="title-base white">Page Title</h4>
         <div class="button-wrap"><a class="button-sm" href="#">Submit</a></div>
     </div>
     <div class="creator-content">
-        <div class="canvas-container">
+        <div id="canvas-container" class="canvas-container">
             <div class="topbar modal-topbar">
-                <div class="button-wrap"><a class="arrow-link mobile-trigger-action" href="#">Go Back</a></div>
+                <div class="button-wrap"><button class='arrow-link' id='close' onClick='closeDialog()'>Go Back</button></div>
                 <h4 class="title-base white">Modal Title</h4>
                 <div class="button-wrap"><a class="button-sm" href="#">Submit</a></div>
             </div>
@@ -104,14 +104,27 @@
             <p class="body-base light">Nunc eu egestas magna. Phasellus elit felis, pretium at ligula quis, efficitur pulvinar enim. Quisque ut odio erat. Sed feugiat arcu nec fringilla pellentesque.</p>
             <p class="body-base light">Proin quam ligula, auctor vitae venenatis pellentesque, euismod non ex. Donec accumsan varius nulla ac commodo.</p>
         </div>
-        <div class="mobile-trigger mobile-trigger-action"><p class="title-2xl white">></p></div>
+        <button id='show' class='mobile-trigger mobile-trigger-action' onClick='showDialog()'><p class="title-2xl white">></p></button>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-    $(".mobile-trigger-action").click(function(){
-         $(".canvas-container").toggleClass("open");
-         $("body").toggleClass("open");
+    const showDialog = () => {
+      document.getElementById('canvas-container').classList.add('show')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    };
+    const closeDialog = () => {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.getElementById('canvas-container').classList.remove('show');
+    }
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     });
 </script>
       </div>
