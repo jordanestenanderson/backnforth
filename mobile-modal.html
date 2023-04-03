@@ -57,7 +57,6 @@ metaimg: meta.jpg
         <button id='show' class='mobile-trigger mobile-trigger-action' onClick='showDialog()'><p class="title-2xl white">></p></button>
     </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
     const showDialog = () => {
       document.getElementById('canvas-container').classList.add('show')
@@ -76,10 +75,5 @@ metaimg: meta.jpg
     }
     window.addEventListener('scroll', () => {
       document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-    });
-
-    $('input').on('focus', function(e) {
-        e.preventDefault(); e.stopPropagation();
-        window.scrollTo(0,0); //the second 0 marks the Y scroll pos. Setting this to i.e. 100 will push the screen up by 100px. 
     });
 </script>
