@@ -6,6 +6,7 @@ body.open {
 }
 html {
     background:$neutral-900;
+    scroll-behavior: smooth;
 }
 .wrapper-xs {
 	max-width: $wrapper-xs;

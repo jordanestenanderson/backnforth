@@ -1,10 +1,17 @@
 a.button-lg {
   font-size: $text-lg;
   padding: 11px $space-sm 13px $space-sm;
+  @include breakpoint-sm {
+    font-size: $text-base;
+    padding: 10px $space-xs 10px $space-xs;
+  }
 }
 a.button-base {
   font-size: $text-base;
   padding: 10px $space-sm 10px $space-sm;
+  @include breakpoint-sm {
+    padding: 10px $space-xs 10px $space-xs;
+  }
 }
 a.button-sm {
   font-size: $text-sm;
