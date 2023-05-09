@@ -51,18 +51,19 @@
         }
         .title-underline {
           position: absolute;
-          bottom: -26px;
-          right: -340px;
+          bottom: -22px;
+          right: -28px;
           width: 256px;
           height: 27.04px;
           @include breakpoint-md {
-            right: -275px;
+            bottom: -22px;
+            right: -32px;
             width: 220px;
             height: 23.23px;
           }
           @include breakpoint-sm {
-            bottom: -16px;
-            right: -180px;
+            bottom: -14px;
+            right: -14px;
             width: 140px;
             height: 14.79px;
           }
