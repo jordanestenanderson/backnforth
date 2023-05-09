@@ -33,6 +33,16 @@ a {
     }
   }
 }
+.title-6xl {
+  font-family: $family-display;
+  font-weight: $font-black;
+  font-size: $text-6xl;
+  line-height: $leading-sm;
+  letter-spacing: $tracking-base;
+  @include breakpoint-sm {
+    font-size: $text-5xl;
+  }
+}
 .title-5xl {
   font-family: $family-display;
   font-weight: $font-black;
@@ -132,7 +142,7 @@ a {
   letter-spacing: $tracking-2xl;
   text-transform: uppercase;
 }
-.title-5xl, .title-4xl, .title-3xl, .title-2xl, .title-xl, .title-lg, .title-base, .title-sm, .title-xs, .overline-sm, .overline-xs, .overline-2xs {
+.title-6xl, .title-5xl, .title-4xl, .title-3xl, .title-2xl, .title-xl, .title-lg, .title-base, .title-sm, .title-xs, .overline-sm, .overline-xs, .overline-2xs {
   color: $neutral-900;
   em {
     font-style: italic;
@@ -156,6 +166,12 @@ a {
 .richtext li {
   margin-top:8px;
 }
+.body-xl {
+  font-size: $text-xl;
+  @include breakpoint-sm {
+    font-size: $text-lg;
+  }
+}
 .body-lg {
   font-size: $text-lg;
 }
@@ -168,7 +184,7 @@ a {
 .body-xs {
   font-size: $text-xs;
 }
-.body-lg, .body-base, .body-sm, .body-xs {
+.body-xl, .body-lg, .body-base, .body-sm, .body-xs {
   font-family: $family-base;
   color: $neutral-700;
   font-weight: $font-base;

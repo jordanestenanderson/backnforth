@@ -14,6 +14,16 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $('.toggle-button').each(function(){
+   var industryValue = $(this).attr('trigger');
+   $(this).click(function(){
+      $(".toggle-button, .industry-image, .industry-list").removeClass("active");
+      $("." + industryValue).addClass("active");
+   });
+  });
+});
+
 $(".lightbox-close, .lightbox-scroller").click(function(){
    $("body, .lightbox, .overlay, .lightbox-content, .lightbox-step").removeClass("open");
 });

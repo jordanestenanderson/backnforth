@@ -5,9 +5,9 @@ sharetitle: Monetize your expertise & engage with your audience
 metadescription: Back n Forth empowers creators to monetize their expertise and connect deeper with supporters through educational engagements asynchronously.
 metaimg: meta.jpg
 
-herotitleone: Monetize your
-herotitletwo: expertise & engage
-herotitlethree: with your audience
+herotitleone: Turn your creative
+herotitletwo: feedback into income
+herodescription: Back n Forth is a platform that streamlines the feedback process between creators and their audience. Take in submissions, provide feedback using our built-in tools, and get compensated for your time.
 heroactiontext: Join the waitlist
 heroactionlink: /#waitlist
 
@@ -19,12 +19,20 @@ introdescription: Back n Forth makes mutual support between you and your audienc
 introbackground: grey-background.jpg
 introbackgroundalt: Dark grey and black gradient background.
 
-marqueecontentone: Artists
-marqueecontenttwo: Illustrators
-marqueecontentthree: Creators
-marqueecontentfour: Photographers
-marqueecontentfive: Marketers
-marqueecontentsix: Designers
+photographygraphic: industry-photography.png
+photographygraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+illustrationgraphic: industry-illustration.png
+illustrationgraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+designgraphic: industry-design.png
+designgraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+uiuxgraphic: industry-uiux.png
+uiuxgraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+artgraphic: industry-art.png
+artgraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+threedgraphic: industry-3d.png
+threedgraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
+othergraphic: industry-other.png
+othergraphicalt: A Back n Forth app screenshot collage showing what creating an engagement looks like, and what a finished engagement card looks like.
 
 steptitle: How does it work?
 steponegraphic: step-1.png
@@ -85,7 +93,7 @@ ctabackgroundalt: Bright purple gradient background.
         <div class="hero">
             <div class="wrapper-md centered">
                 <div class="hero-content-container">
-                    <h1 class="title-5xl white">
+                    <h1 class="title-6xl white">
                         <span>
                             <span class="hero-text">{{ page.herotitleone }}</span>
                             {% include title-star.html %}
@@ -94,11 +102,11 @@ ctabackgroundalt: Bright purple gradient background.
                         <span class="hero-text">{{ page.herotitletwo }}</span>
                         </br>
                         <span>
-                            {% include title-tagline.html %}
                             <span class="hero-text">{{ page.herotitlethree }}</span>
                             {% include title-underline.html %}
                         </span>
                     </h1>
+                    <p class="hero-description body-xl light">{{ page.herodescription }}</p>
                     <a class="button-lg" href="{{ page.heroactionlink }}">
                         <span>{{ page.heroactiontext }}</span>
                     </a>
@@ -119,13 +127,78 @@ ctabackgroundalt: Bright purple gradient background.
                 <h2 class="title-3xl white">{{ page.introtitle }}</h2>
                 <p class="body-lg light">{{ page.introdescription }}</p>
             </div>
-            <div class="marquee-container index">
-                <div class="marquee">
-                  <div class="marquee-track">
-                    <div class="marquee-content">
-                        <span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span><span>{{ page.marqueecontentone }}</span><span>{{ page.marqueecontenttwo }}</span><span>{{ page.marqueecontentthree }}</span><span>{{ page.marqueecontentfour }}</span><span>{{ page.marqueecontentfive }}</span><span>{{ page.marqueecontentsix }}</span>
+            <div class="wrapper-sm index industry-container">
+                <div class="flex gap-xs flex-wrap justify-center industry-menu">
+                    <div class="button-sm toggle-button secondary industry-1 active" trigger="industry-1"><p>Photography</p></div>
+                    <div class="button-sm toggle-button secondary industry-2" trigger="industry-2"><p>Illustration</p></div>
+                    <div class="button-sm toggle-button secondary industry-3" trigger="industry-3"><p>Design</p></div>
+                    <div class="button-sm toggle-button secondary industry-4" trigger="industry-4"><p>UI/UX</p></div>
+                    <div class="button-sm toggle-button secondary industry-5" trigger="industry-5"><p>Art</p></div>
+                    <div class="button-sm toggle-button secondary industry-6" trigger="industry-6"><p>3D</p></div>
+                    <div class="button-sm toggle-button secondary industry-7" trigger="industry-7"><p>Other</p></div>
+                </div>
+                <div class="grid industry-content">
+                    <div class="industry-list industry-1 active">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
                     </div>
-                  </div>
+                    <div class="industry-image industry-1 active">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.photographygraphic }}" alt="{{ page.photographygraphicalt }}" />
+                    </div>
+                    <div class="industry-list industry-2">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-2">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.illustrationgraphic }}" alt="{{ page.illustrationalt }}" />
+                    </div>
+                    <div class="industry-list industry-3">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-3">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.designgraphic }}" alt="{{ page.designgraphicalt }}" />
+                    </div>
+                    <div class="industry-list industry-4">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-4">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.uiuxgraphic }}" alt="{{ page.uiuxalt }}" />
+                    </div>
+                    <div class="industry-list industry-5">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-5">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.artgraphic }}" alt="{{ page.artgraphicalt }}" />
+                    </div>
+                    <div class="industry-list industry-6">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-6">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.threedgraphic }}" alt="{{ page.threedgraphicalt }}" />
+                    </div>
+                    <div class="industry-list industry-7">
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                        <div class="flex align-center">{% include check.html %}<p class="body-base light">This is a test example</p></div>
+                    </div>
+                    <div class="industry-image industry-7">
+                        <img class="step-graphic-img" src="{{ site.baseurl }}/assets/main/{{ page.othergraphic }}" alt="{{ page.othergraphicalt }}" />
+                    </div>
                 </div>
             </div>
         </div>

@@ -92,6 +92,9 @@ html {
 	&.justify-end {
 		justify-content: end;
 	}
+	&.flex-wrap {
+		flex-wrap: wrap;
+	}
 	&.gap-2xs {
 		gap: $space-2xs;
 		@include breakpoint-md {

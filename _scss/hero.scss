@@ -51,32 +51,29 @@
         }
         .title-underline {
           position: absolute;
-          bottom: -20px;
-          right: 16px;
+          bottom: -26px;
+          right: -340px;
           width: 256px;
           height: 27.04px;
           @include breakpoint-md {
-            right: 8px;
+            right: -290px;
             width: 220px;
             height: 23.23px;
           }
           @include breakpoint-sm {
             bottom: -18px;
-            right: 6px;
+            right: -200px;
             width: 160px;
             height: 16.9px;
           }
         }
       }
     }
+    .hero-description {
+      padding-top:$space-xs;
+    }
     .button-lg {
-      margin-top: 56px;
-      @include breakpoint-md {
-        margin-top: 40px;
-      }
-      @include breakpoint-sm {
-        margin-top: 32px;
-      }
+      margin-top: $space-2xs;
     }
     .action-tagline {
       font-size: 15px;

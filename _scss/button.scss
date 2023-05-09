@@ -1,4 +1,4 @@
-a.button-lg {
+.button-lg {
   font-size: $text-lg;
   padding: 11px $space-sm 13px $space-sm;
   @include breakpoint-sm {
@@ -6,18 +6,18 @@ a.button-lg {
     padding: 10px $space-xs 10px $space-xs;
   }
 }
-a.button-base {
+.button-base {
   font-size: $text-base;
   padding: 10px $space-sm 10px $space-sm;
   @include breakpoint-sm {
     padding: 10px $space-xs 10px $space-xs;
   }
 }
-a.button-sm {
+.button-sm {
   font-size: $text-sm;
   padding: 8px $space-xs 10px $space-xs;
 }
-a.button-lg, a.button-base, a.button-sm, .newsletter-button-wrap {
+.button-lg, .button-base, .button-sm, .newsletter-button-wrap, .toggle-button {
   position:relative;
   font-family: $family-base;
   font-weight: $font-bold;
@@ -50,6 +50,9 @@ a.button-lg, a.button-base, a.button-sm, .newsletter-button-wrap {
   }
   &:hover:after {
     opacity: $opacity-100;
+  }
+  &:hover {
+    color: $neutral-100;
   }
   &.secondary {
     background: transparent;
@@ -100,5 +103,16 @@ a.button-lg, a.button-base, a.button-sm, .newsletter-button-wrap {
       padding-left: 6px;
       padding-right: 6px;
     }
+  }
+}
+.toggle-button {
+  cursor: pointer;
+  p {
+    padding:0;
+    margin:0 !important;
+  }
+  &.active {
+    color: $blue;
+    border-color: $blue;
   }
 }
