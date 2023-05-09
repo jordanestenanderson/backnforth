@@ -33,16 +33,6 @@ a {
     }
   }
 }
-.title-6xl {
-  font-family: $family-display;
-  font-weight: $font-black;
-  font-size: $text-6xl;
-  line-height: $leading-sm;
-  letter-spacing: $tracking-base;
-  @include breakpoint-sm {
-    font-size: $text-5xl;
-  }
-}
 .title-5xl {
   font-family: $family-display;
   font-weight: $font-black;
