@@ -167,6 +167,9 @@ a {
 }
 .body-base {
   font-size: $text-base;
+  @include breakpoint-sm {
+    font-size: 1.1rem;
+  }
 }
 .body-sm {
   font-size: $text-sm;
