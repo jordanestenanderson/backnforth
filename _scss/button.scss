@@ -88,6 +88,16 @@
       border: 1px solid $neutral-100;
     }
   }
+  &.newsletter-button-wrap {
+    background: $blue;
+    border: 1px solid $blue;
+    &:after {
+      display:none;
+    }
+    &:hover {
+      opacity: $opacity-80;
+    }
+  }
   &.ghost {
     background: transparent;
     padding-left: $space-2xs;

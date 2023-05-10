@@ -1,0 +1,17 @@
+<div class="footer" data-aos="fade-down">
+    <div class="cta fitted-background">
+        <img class="fitted-image" src="{{ site.baseurl }}/assets/main/{{ page.ctabackground }}" alt="{{ page.ctabackgroundalt }}" />
+        <div class="wrapper-md grid gap-lg cta-row">
+            <div class="cta-graphic flex align-center justify-center index">
+                <img class="step-graphic-img desktop-cta" src="{{ site.baseurl }}/assets/main/{{ page.desktopctagraphic }}" alt="{{ page.ctagraphicalt }}" />
+                <img class="step-graphic-img mobile-cta" src="{{ site.baseurl }}/assets/main/{{ page.mobilectagraphic }}" alt="{{ page.ctagraphicalt }}" />
+            </div>
+            <div class="cta-content index">
+                <h2 class="title-3xl white">{{ page.ctatitle }}</h2>
+                <p class="body-lg white">{{ page.ctadescription }}</p>
+                <a class="button-lg blue" href="{{ page.ctaactionlink }}"><span>{{ page.ctaactiontext }}</span></a>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</div>

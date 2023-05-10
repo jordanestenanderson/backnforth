@@ -1,4 +1,9 @@
 .faq {
+  border-radius: 0px;
+  padding: $space-2xl 0;
+  @include breakpoint-md {
+    padding: $space-xl 0;
+  }
   h2 {
     padding-bottom: $space-xs;
     justify-content: center;

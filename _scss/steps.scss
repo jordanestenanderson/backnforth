@@ -1,4 +1,9 @@
 .how-it-works {
+  border-radius: 0px;
+  padding: $space-2xl 0;
+  @include breakpoint-md {
+    padding: $space-xl 0;
+  }
   h2 {
     padding-bottom: $space-sm;
     @include breakpoint-md {
