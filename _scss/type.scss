@@ -1,3 +1,50 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+@font-face {
+  font-family: "Degular";
+  font-weight: 400;
+  src:  url('/assets/fonts/Degular-Medium.eot');
+  src:  url('/assets/fonts/Degular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Degular-Medium.woff2') format('woff2'),
+         url('/assets/fonts/Degular-Medium.woff') format('woff'),
+         url('/assets/fonts/Degular-Medium.ttf')  format('truetype'),
+         url('/assets/fonts/Degular-Medium.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: "Degular";
+  font-weight: 700;
+  src:  url('/assets/fonts/Degular-Bold.eot');
+  src:  url('/assets/fonts/Degular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Degular-Bold.woff2') format('woff2'),
+         url('/assets/fonts/Degular-Bold.woff') format('woff'),
+         url('/assets/fonts/Degular-Bold.ttf')  format('truetype'),
+         url('/assets/fonts/Degular-Bold.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: "Degular";
+  font-weight: 800;
+  src:  url('/assets/fonts/Degular-Black.eot');
+  src:  url('/assets/fonts/Degular-Black.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Degular-Black.woff2') format('woff2'),
+         url('/assets/fonts/Degular-Black.woff') format('woff'),
+         url('/assets/fonts/Degular-Black.ttf')  format('truetype'),
+         url('/assets/fonts/Degular-Black.svg#svgFontName') format('svg');
+}
+
+
 html {
   font-family: $family-base;
   color: $neutral-700;
