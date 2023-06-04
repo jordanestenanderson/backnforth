@@ -16,47 +16,32 @@
 @font-face {
   font-family: "Degular";
   font-weight: 400;
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.eot");
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.woff2")
-      format("woff2"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.woff")
-      format("woff"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.ttf")
-      format("truetype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Medium.svg#svgFontName")
-      format("svg");
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.eot');
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.woff2') format('woff2'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.woff') format('woff'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.ttf')  format('truetype'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Medium.svg#svgFontName') format('svg');
 }
 @font-face {
   font-family: "Degular";
   font-weight: 700;
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.eot");
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.woff2")
-      format("woff2"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.woff")
-      format("woff"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.ttf")
-      format("truetype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Bold.svg#svgFontName")
-      format("svg");
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.eot');
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.woff2') format('woff2'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.woff') format('woff'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.ttf')  format('truetype'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Bold.svg#svgFontName') format('svg');
 }
 @font-face {
   font-family: "Degular";
   font-weight: 800;
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Black.eot");
-  src: url("https://www.gobacknforth.com/assets/fonts/Degular-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Black.woff2")
-      format("woff2"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Black.woff")
-      format("woff"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Black.ttf")
-      format("truetype"),
-    url("https://www.gobacknforth.com/assets/fonts/Degular-Black.svg#svgFontName")
-      format("svg");
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.eot');
+  src:  url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.woff2') format('woff2'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.woff') format('woff'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.ttf')  format('truetype'),
+         url('https://jordanestenanderson.github.io/backnforth.github.io/assets/fonts/Degular-Black.svg#svgFontName') format('svg');
 }
 html {
   font-family: $family-base;
