@@ -2,6 +2,15 @@ footer {
   .footer-container {
     width: 100%;
     padding: $space-lg 0 $space-lg 0;
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      margin-bottom: $space-lg;
+      @include breakpoint-md {
+        margin-top: $space-md;
+        margin-bottom: $space-sm;
+      }
+    }
     .footer-bottom {
       .footer-content {
         width: 250px;
