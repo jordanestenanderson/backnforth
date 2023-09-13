@@ -33,6 +33,11 @@
 			overflow-y: scroll;
 			cursor: pointer;
 			padding: $space-md;
+			&.video {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
 			@include breakpoint-md {
 			  padding: $space-sm;
 			}
@@ -44,6 +49,10 @@
 				-moz-transition: all 350ms ease-out;
 				-o-transition: all 350ms ease-out;
 				transition: all 350ms ease-out;
+				&.video {
+					width: 100%;
+					margin: 0;
+				}
 				&.open {
 					padding-top:0px;
 					opacity: $opacity-100;
@@ -76,6 +85,9 @@
 					transition: all 350ms ease-out;
 					&.video {
 						max-width: 1000px;
+						@include breakpoint-sm {
+						  margin-bottom: $space-xl;
+						}
 					}
 					.lightbox-img {
 						border-radius: $border-radius-lg;
