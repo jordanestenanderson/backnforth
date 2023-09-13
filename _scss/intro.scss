@@ -3,6 +3,22 @@
   overflow:visible;
   .intro-graphic-container {
     .media-wrapper {
+      position: relative;
+      .video-overlay {
+        position:absolute;
+        width: 100%;
+        height: calc(100% + $space-2xl);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        margin-top: -$space-2xl;
+        svg {
+          width: 80px;
+          height: 80px;
+        }
+      }
       img, video {
         margin-top: -$space-2xl;
         border-radius: $border-radius-md;

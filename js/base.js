@@ -23,9 +23,15 @@ $(document).ready(function(){
    });
   });
 });
+ 
+$(".video-overlay").click(function(){
+   $("body, .lightbox, .overlay, .lightbox-content, .lightbox-step").addClass("open");
+   $(".lightbox-step iframe").attr("src", "https://player.vimeo.com/video/863375235?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1");
+});
 
 $(".lightbox-close, .lightbox-scroller").click(function(){
    $("body, .lightbox, .overlay, .lightbox-content, .lightbox-step").removeClass("open");
+   $(".lightbox-step iframe").attr("src", "https://player.vimeo.com/video/863375235?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479");
 });
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
