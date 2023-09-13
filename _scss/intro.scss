@@ -4,6 +4,14 @@
   .intro-graphic-container {
     .media-wrapper {
       position: relative;
+      &:hover {
+        .video-action{
+          @include scale(1.05);
+        }
+        video {
+          @include scale(1.02);
+        }
+      }
       .video-overlay {
         position:absolute;
         width: 100%;
@@ -14,15 +22,36 @@
         bottom: 0;
         z-index: 4;
         margin-top: -$space-2xl;
-        svg {
-          width: 80px;
-          height: 80px;
+        cursor: pointer;
+        .video-action {
+          flex-direction: column;
+          @include transition(350ms);
+          .play {
+            width: 80px;
+            height: 80px;
+            @include breakpoint-md {
+              width: 50px;
+              height: 50px;
+            }
+          }
+          .play-text {
+            margin-top: $space-sm;
+            width: 200px;
+            height: 13px;
+            @include breakpoint-md {
+              margin-top: $space-xs;
+              width: 160px;
+              height: 11px;
+            }
+          }
         }
       }
       img, video {
         margin-top: -$space-2xl;
         border-radius: $border-radius-md;
         overflow:hidden;
+        box-shadow: $shadow-xl;
+        @include transition(350ms);
       }
       video {
         width:100% !important;
